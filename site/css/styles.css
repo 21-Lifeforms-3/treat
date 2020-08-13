@@ -1,3 +1,5 @@
+
+
 body {
 	font-size: 16px;
 	color: #ffffff;
@@ -51,4 +53,66 @@ body {
 }
 .navbar-brand p span {
 	vertical-align: middle;
+}
+#about-img {
+	background: url('../images/about_icon.png') no-repeat;
+	width: 40px;
+	height: 40px;
+	margin: 0px;
+	border: 3px;
+}
+#collector-img {
+	background: url('../images/collector_icon.png') no-repeat;
+	width: 40px;
+	height: 40px;
+	margin: 0px;
+	border: 3px;
+}
+#help-img {
+	background: url('../images/help_icon.png') no-repeat;
+	width: 40px;
+	height: 40px;
+	margin: 0px;
+	border: 3px;
+}
+#home-img {
+	background: url('../images/home_icon.png') no-repeat;
+	width: 40px;
+	height: 40px;
+	margin: 0px;
+	border: 3px;
+}
+#neighbor-img {
+	background: url('../images/neighbor_icon.png') no-repeat;
+	width: 40px;
+	height: 40px;
+	margin: 0px;
+	border: 3px;
+}
+#shop-img {
+	background: url('../images/shop_icon.png') no-repeat;
+	width: 40px;
+	height: 40px;
+	margin: 0px;
+	border: 3px;
+}
+#trickster-img {
+	background: url('../images/trickster_icon.png') no-repeat;
+	width: 40px;
+	height: 40px;
+	margin: 0px;
+	border: 3px;
+}
+#nav-list {
+	margin-top: 10px;
+}
+#nav-list a {
+	color: #000000;
+	text-align: middle;
+}
+#nav-list a:hover {
+	background: #f5963d;
+}
+#nav-list a span {
+	font-size: 1.8em;
 }
