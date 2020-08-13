@@ -18,7 +18,7 @@ body {
 	background: url('../images/cat_logo.png') no-repeat;
 	width: 300px;
 	height: 150px;
-	margin: 40px 40px 0px 0px;
+	margin: 40px 40px 30px 0px;
 }
 
 #webbing-img {
@@ -102,12 +102,25 @@ body {
 	height: 40px;
 	margin: 0px;
 }
+#login-img {
+	background: url('../images/login.png') no-repeat;
+	width: 40px;
+	height: 40px;
+	margin: 0px;
+}
+#join-img {
+	background: url('../images/join.png') no-repeat;
+	width: 40px;
+	height: 40px;
+	margin: 0px;
+}
 #nav-list {
 	margin-top: -20px;
 }
 #nav-list a {
 	color: #000000;
 	text-align: middle;
+	margin-right: 20px;
 }
 #nav-list a:hover {
 	background: #f5963d;
