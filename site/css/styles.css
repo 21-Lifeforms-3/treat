@@ -16,14 +16,14 @@ body {
 	background: url('../images/cat_logo.png') no-repeat;
 	width: 300px;
 	height: 150px;
-	margin: 10px 40px 10px 0px;
+	margin: 40px 40px 0px 0px;
 }
 
 #webbing-img {
 	background: url('../images/web_logo.png') no-repeat;
 	width: 150px;
 	height: 150px;
-	margin: 10px 0px 10px 100px;
+	margin: 5px 0px 10px 100px;
 }
 .navbar-brand {
 	padding-top: 50px;
