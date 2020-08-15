@@ -28,14 +28,8 @@ body {
 	margin: 5px 0px 10px 100px;
 }
 
-
-
 .navbar-brand {
 	padding-top: 50px;
-}
-@media (max-width: 991px) {
-	.navbar-brand {
-	padding-top: 0px;}
 }
 
 .navbar-brand h1 {
@@ -49,11 +43,7 @@ body {
  	margin-bottom: 0;
  	line-height: 1;
 }
-@media (max-width: 767px) {
-	.navbar-brand h1 {
-	font-size: 1.5em;
-	padding-top: 10px;}
-}
+
 
 .navbar-brand a:hover, .navbar-brand a:focus {
 	text-decoration: none;
@@ -72,7 +62,6 @@ body {
 	width: 40px;
 	height: 40px;
 	margin: 0px;
-	margin-right: 125px;
 }
 #collector-img {
 	background: url('../images/collector_icon.png') no-repeat;
@@ -91,6 +80,7 @@ body {
 	width: 40px;
 	height: 40px;
 	margin: 0px;
+	margin-right: 125px;
 }
 #neighbor-img {
 	background: url('../images/neighbor_icon.png') no-repeat;
@@ -140,13 +130,7 @@ body {
 	background: #f5963d;
 }
 #nav-list a span {
-	font-size: 1.8em;
-}
-@media (max-width: 767px) {
-	#nav-list {
-	font-size: 2em;
-	padding-top: 10px;
-	margin-left: 80px}
+	font-size: 1em;
 }
 
 #pick-img {
@@ -177,16 +161,23 @@ body {
 	border-color: #000000;
 	margin-right: 40px;
 }
+
+/*   large devices only   */
+
 @media (min-width: 1200px) {
-	.jumbotron {
+	.container .jumbotron {
 		background: url('../images/1_lg.png') no-repeat;
 		height: 450px;
 		margin-top: 80px;
 		box-shadow: 0 0 40px #000000;
 		border: 5px solid: #000000;
 	}
+}
+
+/*   medium devices only   */
+
 @media (min-width: 992px) and (max-width: 1199px) {
-	.jumbotron {
+	.container .jumbotron {
 		background: url('../images/1_md.png') no-repeat;
 		height: 330px;
 		margin-top: 80px;
@@ -194,4 +185,38 @@ body {
 		border: 5px solid: #000000;
 	}
 
+}
+
+/*   small devices only   */
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.container .jumbotron {
+		background: url('../images/1_sm.png') no-repeat;
+		height: 200px;
+		margin-top: 80px;
+		box-shadow: 0 0 40px #000000;
+		border: 5px solid: #000000;
+	}
+	.navbar-brand {
+	padding-top: 0px;}
+
+}
+
+/*   extra small devices only   */
+
+@media (max-width: 767px) {
+    .container .jumbotron {
+		padding: 0px;
+		box-shadow: 0 0 40px #000000;
+		border: 5px solid: #000000;
+	}	
+	#nav-list {
+	font-size: 2em;
+	padding-top: 10px;
+	margin-left: 80px
+    }
+    .navbar-brand h1 {
+	font-size: 1.5em;
+	padding-top: 10px;
+    }
 }
