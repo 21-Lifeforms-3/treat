@@ -59,7 +59,7 @@ body {
 		border: 5px solid: #000000;
 }
 
-#menu-tile, #specials-tile, #map_tile {
+#costume-tile, #houses-tile, #join-tile {
 	height: 250px;
 	width: 100%;
 	margin-bottom: 15;
@@ -67,9 +67,33 @@ body {
 	border: 2px solid #000000;
 	overflow: hidden;
 }
-#menu-tile: hover, #specials-tile: hover, #map-tile: hover {
+#costume-tile:hover, #houses-tile:hover, #join-tile:hover {
 	box-shadow: 0 1px 5px 1px #cccccc;
+
 }
+
+#costume-tile {
+	background: url('../images/what_char.png') no-repeat;
+	background-position: center;
+}
+#houses-tile {
+	background: url('../images/pick_house.png') no-repeat;
+	background-position: center;
+}
+#costume-tile span, #houses-tile span, #join-tile span {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.6em;
+	text-transform: uppercase;
+	background-color: #dea973;
+	color: #000000;
+	opacity: .7;
+}
+
+/**   end home page    **/
 
 #about-img {
 	background: url('../images/about_icon.png') no-repeat;
@@ -141,8 +165,7 @@ body {
 	margin-right: 20px;
 }
 #nav-list a:hover {
-	background: #f5963d;
-}
+	background: #f5963d;}
 #nav-list a span {
 	font-size: 1em;
 }
