@@ -51,8 +51,34 @@ body {
 .navbar-brand p span {
 	vertical-align: middle;
 }
+/**  END HEADER  **/
 
-/**  home page   **/
+/**  FOOTER  **/
+.panel-footer {
+	margin-top: 30px;
+	padding-top: 35px;
+	padding-bottom: 30px;
+	background-color: #000000;
+	border-top: 0;
+}
+.panel-footer div.row {
+	margin-bottom: 35px;
+}
+#hours, #verbage {
+	line-height: 1.5em;
+}
+#hours > span, #credits > span {
+	font-size: 1.3em;
+}
+#verbage {
+	font-style: italic;
+}
+#copyright {
+	color: #4c592e;
+	font-size: .8em;
+}
+
+/**  HOME PAGE  **/
 
 .container .jumbotron {		
 		box-shadow: 0 0 40px #000000;
@@ -248,5 +274,16 @@ body {
 	font-size: 1.5em;
 	padding-top: 0px;
 	line-height: 0;
+    }
+    /*  FOOTER  */
+    .panel-footer section {
+    	margin-bottom: 30px;
+    	text-align: center;
+    }
+    .panel-footer section:nth-child(3) {
+    	margin-bottom: 0;
+    }
+    .panel-footer section hr {
+    	width: 50%;
     }
 }
