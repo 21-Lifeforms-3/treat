@@ -8,6 +8,7 @@ body {
 }
 
 /** HEADER **/
+
 #header-nav {
 	background-color: #473f39;
 	border-radius: 0;
@@ -51,9 +52,26 @@ body {
 .navbar-brand p span {
 	vertical-align: middle;
 }
+
 /**  END HEADER  **/
 
+#nav-list {
+	margin-top: -60px;
+}
+#nav-list a {
+	color: #000000;
+	text-align: center;
+	margin-right: 20px;
+}
+#nav-list a:hover {
+	background: #f5963d;
+}
+#nav-list a span {
+	font-size: 1em;
+}
+
 /**  FOOTER  **/
+
 .panel-footer {
 	margin-top: 30px;
 	padding-top: 35px;
@@ -84,7 +102,6 @@ body {
 		box-shadow: 0 0 40px #000000;
 		border: 5px solid: #000000;
 }
-
 #costume-tile, #houses-tile, #join-tile {
 	height: 250px;
 	width: 100%;
@@ -95,9 +112,7 @@ body {
 }
 #costume-tile:hover, #houses-tile:hover, #join-tile:hover {
 	box-shadow: 0 1px 5px 1px #cccccc;
-
 }
-
 #costume-tile {
 	background: url('../images/what_char.png') no-repeat;
 	background-position: center;
@@ -110,9 +125,6 @@ body {
 	background: url('../images/join_img.png') no-repeat;
 	background-position: center;
 }
-
-
-
 #costume-tile span, #houses-tile span, #join-tile span {
 	position: absolute;
 	bottom: 0;
@@ -128,18 +140,6 @@ body {
 
 /**   end home page    **/
 
-#about-img {
-	background: url('../images/about_icon.png') no-repeat;
-	width: 40px;
-	height: 40px;
-	margin: 0px;
-}
-#collector-img {
-	background: url('../images/collector_icon.png') no-repeat;
-	width: 40px;
-	height: 40px;
-	margin: 0px;
-}
 #help-img {
 	background: url('../images/help_icon.png') no-repeat;
 	width: 40px;
@@ -150,8 +150,7 @@ body {
 	background: url('../images/home_icon.png') no-repeat;
 	width: 40px;
 	height: 40px;
-	margin: 0px;
-	margin-right: 125px;
+	margin: 0px;	
 }
 #neighbor-img {
 	background: url('../images/neighbor_icon.png') no-repeat;
@@ -161,12 +160,6 @@ body {
 }
 #shop-img {
 	background: url('../images/shop_icon.png') no-repeat;
-	width: 40px;
-	height: 40px;
-	margin: 0px;
-}
-#trickster-img {
-	background: url('../images/trickster_icon.png') no-repeat;
 	width: 40px;
 	height: 40px;
 	margin: 0px;
@@ -189,20 +182,6 @@ body {
 	height: 40px;
 	margin: 0px;
 }
-#nav-list {
-	margin-top: -20px;
-}
-#nav-list a {
-	color: #000000;
-	text-align: middle;
-	margin-right: 20px;
-}
-#nav-list a:hover {
-	background: #f5963d;}
-#nav-list a span {
-	font-size: 1em;
-}
-
 #pick-img {
 	background: url('../images/1_lg.png') no-repeat;
 	width: 650px;
@@ -238,7 +217,7 @@ body {
 	.container .jumbotron {
 		background: url('../images/1_lg.png') no-repeat;
 		height: 450px;
-		margin-top: 80px;
+		margin-top: 15px;
 	}
 }
 
@@ -248,9 +227,8 @@ body {
 	.container .jumbotron {
 		background: url('../images/1_md.png') no-repeat;
 		height: 330px;
-		margin-top: 80px;
+		margin-top: 15px;
 	}
-
 }
 
 /*   small devices only   */
@@ -259,18 +237,18 @@ body {
 	.container .jumbotron {
 		background: url('../images/1_sm.png') no-repeat;
 		height: 200px;
-		margin-top: 80px;
+		margin-top: 15px;
 	}
 	.navbar-brand {
 	padding-top: 0px;
     }
+    #nav-list {
+	margin-top: 0px;
+	}
     #join-tile {
 	background: url('../images/join_img_sm.png') no-repeat;
 	margin-top: 35px;
-}
-
-
-
+	}
 }
 
 /*   extra small devices only   */
@@ -280,14 +258,16 @@ body {
 		padding: 0px;
 	}	
 	#nav-list {
-	font-size: 2em;
+	font-size: 1em;
 	padding-top: 10px;
-	margin-left: 80px
+	margin: 0 auto 0;
+	width: 100px;
     }
     .navbar-brand h1 {
-	font-size: 1.5em;
+	font-size: 1.7em;
 	padding-top: 0px;
 	line-height: 0;
+	margin-left: 45px;
     }
     #costume-tile, #houses-tile, #join-tile {
     	width: 360px;
