@@ -267,7 +267,8 @@ body {
 	font-size: 1.7em;
 	padding-top: 0px;
 	line-height: 0;
-	margin-left: 45px;
+	position: absolute;
+	margin-left: 45px
     }
     #costume-tile, #houses-tile, #join-tile {
     	width: 360px;
