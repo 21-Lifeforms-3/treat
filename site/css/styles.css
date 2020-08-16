@@ -106,6 +106,13 @@ body {
 	background: url('../images/pick_house.png') no-repeat;
 	background-position: center;
 }
+#join-tile {
+	background: url('../images/join_img.png') no-repeat;
+	background-position: center;
+}
+
+
+
 #costume-tile span, #houses-tile span, #join-tile span {
 	position: absolute;
 	bottom: 0;
@@ -255,7 +262,14 @@ body {
 		margin-top: 80px;
 	}
 	.navbar-brand {
-	padding-top: 0px;}
+	padding-top: 0px;
+    }
+    #join-tile {
+	background: url('../images/join_img_sm.png') no-repeat;
+	margin-top: 35px;
+}
+
+
 
 }
 
@@ -275,6 +289,10 @@ body {
 	padding-top: 0px;
 	line-height: 0;
     }
+    #costume-tile, #houses-tile, #join-tile {
+    	width: 360px;
+    	margin: 0 auto 15px;
+    } 
     /*  FOOTER  */
     .panel-footer section {
     	margin-bottom: 30px;
@@ -285,5 +303,5 @@ body {
     }
     .panel-footer section hr {
     	width: 50%;
-    }
+    }    
 }
