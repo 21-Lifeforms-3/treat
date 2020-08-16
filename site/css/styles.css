@@ -111,7 +111,7 @@ body {
 	overflow: hidden;
 }
 #costume-tile:hover, #houses-tile:hover, #join-tile:hover {
-	box-shadow: 0 1px 5px 1px #cccccc;
+	box-shadow: 0 1px 10px 5px #000000;
 }
 #costume-tile {
 	background: url('../images/what_char.png') no-repeat;
@@ -136,6 +136,20 @@ body {
 	background-color: #dea973;
 	color: #000000;
 	opacity: .7;
+}
+#costume-tile div, #houses-tile div {
+	position: absolute;
+	top: 97px;
+	left: 0;
+	font-size: 4em;
+	color: #000000;
+}
+#costume-tile p, #houses-tile p {
+	position: absolute;
+	top: 85px;
+	right: 0; 
+	font-size: 4em;
+	color: #000000;
 }
 
 /**   end home page    **/
