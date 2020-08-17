@@ -269,7 +269,7 @@ body {
 
 @media (max-width: 767px) {
     .container .jumbotron {
-		padding: 0px;
+		padding: 0px;	
 	}	
 	#nav-list {
 	font-size: 1em;
