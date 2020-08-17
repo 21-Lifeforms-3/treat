@@ -269,7 +269,13 @@ body {
 
 @media (max-width: 767px) {
     .container .jumbotron {
+<<<<<<< HEAD
 		padding: 0px;	
+=======
+	    <div class="jumbotron">     
+ 		<img src="../images/1_sm.png" alt="House pick image">;
+		padding: 0px;
+>>>>>>> 0cc02a6af1e0fbbc8e3556048037aa193c12f359
 	}	
 	#nav-list {
 	font-size: 1em;
