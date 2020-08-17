@@ -1,5 +1,4 @@
 
-
 body {
 	font-size: 16px;
 	color: #ffffff;
@@ -41,6 +40,9 @@ body {
  	line-height: 1;
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
+	text-decoration: none;
+}
+.home-tile-brand a:hover, .home-tile-brand a:focus {
 	text-decoration: none;
 }
 .navbar-brand p {
@@ -139,18 +141,28 @@ body {
 }
 #costume-tile div, #houses-tile div {
 	position: absolute;
-	top: 97px;
+	top: 75px;
 	left: 0;
 	font-size: 4em;
 	color: #000000;
 }
 #costume-tile p, #houses-tile p {
 	position: absolute;
-	top: 85px;
+	top: 75px;
 	right: 0; 
 	font-size: 4em;
 	color: #000000;
 }
+/**  HELP PAGE  **/
+#pass-help div, #choice-help div, #photo-help div, #treat-help div, #store-help div {
+	font-size: 1.5em;
+	color: #e3ba74
+}
+#pass-help p, #choice-help p, #photo-help p, #treat-help p, #store-help {
+	font-size: .9em;
+	color: #000000;
+}
+/** END HELP PAGE  **/
 
 /**   end home page    **/
 
@@ -269,13 +281,9 @@ body {
 
 @media (max-width: 767px) {
     .container .jumbotron {
-<<<<<<< HEAD
-		padding: 0px;	
-=======
 	    <div class="jumbotron">     
  		<img src="../images/1_sm.png" alt="House pick image">;
 		padding: 0px;
->>>>>>> 0cc02a6af1e0fbbc8e3556048037aa193c12f359
 	}	
 	#nav-list {
 	font-size: 1em;
