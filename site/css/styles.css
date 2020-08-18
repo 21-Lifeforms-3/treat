@@ -56,7 +56,39 @@ body {
 }
 
 /**  END HEADER  **/
-
+.resizedTextbox {
+	width: 100%;
+	height: 40px;
+	background-color: #dea973;
+	font-size: 1.6em;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	opacity: .7;
+}
+.Nbutton {
+	top: 8px;
+	left: 8px;
+}
+.Tbutton {
+	top: 8px;
+	right: 8px;
+}
+.Nbutton, .Tbutton {
+	position: absolute;
+	background-color: #d1c5c5;
+	font-size: 1em;
+	padding: 5px 5px;
+	color: #712db5;
+	width: 45%;
+	opacity: .9;
+	border-radius: 10px;
+}
+.nameInput {
+	color: #0f13f7;
+	font-size: 1.1em;
+	font-style: italic; 
+}
 #nav-list {
 	margin-top: -60px;
 }

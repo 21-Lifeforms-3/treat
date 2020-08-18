@@ -2,6 +2,7 @@
 <html>
 
 <head>
+
 	<title>Hallowed Addiction</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/styles.css">
@@ -9,6 +10,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Oxygen:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+ <!--   <script src="../js/script.js"></script> -->
 
   <header>
 
@@ -101,9 +105,51 @@
       </div>
 
 
+<!--<script src="../js/Jscripts.js"></script>-->
+
+
       <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-        <a href="sign_in_join.html"><div id="join-tile"><span>Join</span></div></a>
+        
+         <div id="join-tile" class="text-center">
+          
+          <button class="Nbutton" onclick="newname()">Player Name:<div id="newn" class="nameInput"></div></button>
+          
+          <button class="Tbutton" onclick="newtitle()">House title:<div id="newt" class="nameInput"></div></button><br><br>
+          
+
+          <form action="/action_page.php">
+            <br><br><br>        
+            <label style="color: #bf0a0a" for="email">E-mail:</label>
+            <input type="email" id="email" name="email"><br>
+            <label style="color: #bf0a0a" for="pwd">Password:</label>
+            <input style="color: #000000" type="password" id="pwd" name="pwd"><br>
+            <input class="resizedTextbox" type="submit" STYLE="color: #000000" value="JOIN">
+          </form>
+        </div>
       </div>
+
+<script>
+function newname () {
+  var firstnames = ["Bif ", "Jon ", "Ping ", "Stan "];
+  var middlenames = ["Lee", "Pon", "Free", "Kong"];
+  var lastnames = [" Tong", " Smith", " Morgan", " Klien"];
+var ri1 = firstnames[Math.floor(Math.random() * firstnames.length)];
+var ri2 = middlenames[Math.floor(Math.random() * middlenames.length)];
+var ri3 = lastnames[Math.floor(Math.random() * lastnames.length)];
+newn = ri1.concat(ri2, ri3);
+document.getElementById("newn").innerText = newn
+}
+function newtitle () {
+  var firstnames = ["Bif ", "Jon ", "Ping ", "Stan "];
+  var middlenames = ["Lee", "Pon", "Free", "Kong"];
+  var lastnames = [" Tong", " Smith", " Morgan", " Klien"];
+var ri1 = firstnames[Math.floor(Math.random() * firstnames.length)];
+var ri2 = middlenames[Math.floor(Math.random() * middlenames.length)];
+var ri3 = lastnames[Math.floor(Math.random() * lastnames.length)];
+newt = ri1.concat(ri2, ri3);
+document.getElementById("newt").innerText = newt
+}
+</script>
 
 
     </div><!--   END OF HOME TILES      --> 
@@ -135,8 +181,6 @@
    </div>
  </footer><!--   END FOOTER   -->
 
-  <script src="js/jquery-2.1.4.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
+
 </body>
 </html>

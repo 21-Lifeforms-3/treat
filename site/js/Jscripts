@@ -1,3 +1,18 @@
+const firstnames = ["Bif","Jon","Ping","Stan"];
+const middlenames = ["Lee","Pon","Free",Kong"];
+const lastnames = ["Tong","Smith","Morgan","Klien"];
+
+const getRandomnumber = (max) => math.floor(math.random() * max);
+
+const getRandomName = () => '${firstnames[getRandomnumber(firstnames.length)]} ${middlenames[getRandomnumber(middlenames.length)]} ${lastnames[getRandomnumber(lastnames.length)]}';
+
+document.getElementById('rnd-player-name').innerText = getRandomName();
+
+
+
+
+
+
 var x = 0; //initializes counter
 function switchImg() {
   if (x == 1) {
