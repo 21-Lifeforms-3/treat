@@ -162,6 +162,9 @@ body {
 	color: #000000;
 	opacity: .7;
 }
+#join-tile img {
+	margin-left: -2px;
+}
 #costume-tile div, #houses-tile div {
 	position: absolute;
 	top: 75px;
@@ -175,6 +178,9 @@ body {
 	right: 0; 
 	font-size: 4em;
 	color: #000000;
+}
+#costume-tile img, #houses-tile img {
+	
 }
 /**  HELP PAGE  **/
 #awards-help div, #pass-help div, #choice-help div, #photo-help div, #treat-help div, #store-help div {

@@ -83,7 +83,7 @@
 
       <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
         <div id="costume-tile">
-          <img src="../images/what_char.png" alt="Next Costume" id="imgToSwitch" onclick="switchImg()">
+          <img src="../images/char_group/what_char.png" alt="Next Costume" id="imgToSwitch" onclick="switchImg()">
           <span>Costume</span>
         </div>
       </div>
@@ -91,7 +91,7 @@
 
       <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
         <div id="houses-tile">
-          <img src="../images/pick_house.png" alt="Next Costume" id="homeToSwitch" onclick="switchhome()">
+          <img src="../images/home_group/pick_house.png" alt="Next Costume" id="homeToSwitch" onclick="switchhome()">
           <span>House</span>
         </div>
       </div>
@@ -106,15 +106,19 @@
           
           <button class="Nbutton" onclick="newname()">Player Name:<div id="newn" class="nameInput"></div></button>
           
-          <button class="Tbutton" onclick="newtitle()">House title:<div id="newt" class="nameInput"></div></button><br><br>
+          <button class="Tbutton" onclick="newtitle()">House title:<div id="newt" class="nameInput"></div></button><br>
           
 
           <form action="/action_page.php">
             <br><br><br>        
-            <label style="background-color: rgba(0, 0, 0, 0.5)" style="color: #bf0a0a" for="email">E-mail:</label>
+            <label style="background-color: rgba(0, 0, 0, 0.5)" style="color: #bf0a0a" for="email">E-mail:</label>;
             <input style="background-color: rgba(0, 0, 0, 0.5)" type="email" id="email" name="email"><br>
-            <label style="background-color: rgba(0, 0, 0, 0.5)"style="color: #bf0a0a" for="pwd">Password:</label>
-            <input style="background-color: rgba(0, 0, 0, 0.5)" style="color: #000000" type="password" id="pwd" name="pwd"><br>
+            <label style="background-color: rgba(0, 0, 0, 0.5)"style="color: #bf0a0a" for="pwd">Password:</label>;
+            <input style="background-color: rgba(0, 0, 0, 0.5)" style="color: #000000" type="password" id="pwd" name="pwd">;
+
+            <img src="../images/intensity-low.png" alt="Next Level" id="intensity" onclick="swFright()">
+
+
             <input class="resizedTextbox" type="submit" STYLE="color: #000000" value="JOIN">
           </form>
         </div>
@@ -124,28 +128,40 @@
       //    CHANGE COSTUME   //
 x = 0;
 function switchImg() {
-var closet = ["../images/char_group/alien.png", "../images/char_group/witch.png", "../images/char_group/devil.png"];
+var closet = ["../images/char_group/alien.png", "../images/char_group/witch.png", "../images/char_group/devil.png", "../images/char_group/bear.png", "../images/char_group/bee.png", "../images/char_group/convict.png", "../images/char_group/elf.png", "../images/char_group/frankmonster.png", "../images/char_group/girl-pirate.png", "../images/char_group/girl-pumpkin.png", "../images/char_group/gray-vamp.png", "../images/char_group/green-witch.png", "../images/char_group/mermaid.png", "../images/char_group/mummy.png", "../images/char_group/pirate.png", "../images/char_group/pumpkin.png", "../images/char_group/ridinghood.png", "../images/char_group/vamp.png"];
 
  var image = document.getElementById("imgToSwitch");
  var choice = closet[x];
  image.src = choice;
  x++;
- if (x > 2) {x = 0};
+ if (x > 17) {x = 0};
 }
 
      //     CHANGE HOUSE    //
 y = 0;
 function switchhome() {
-var closet = ["../images/char_group/alien.png", "../images/char_group/witch.png", "../images/char_group/devil.png"];
+var closet = ["../images/home_group/2.png", "../images/home_group/3.png", "../images/home_group/4.png", "../images/home_group/5.png", "../images/home_group/6.png", "../images/home_group/7.png", "../images/home_group/8.png", "../images/home_group/9.png", "../images/home_group/10.png", "../images/home_group/11.png", "../images/home_group/12.png", "../images/home_group/13.png"];
 
  var image = document.getElementById("homeToSwitch");
  var choice = closet[y];
  image.src = choice;
  y++;
- if (y > 2) {y = 0};
+ if (y > 11) {y = 0};
 }
 
-      //     CHANGE NAME       //
+       //    INTENSITY   LEVEL      //
+z = 0;
+function swFright() {
+  var level = ["../images/intensity-low.png", "../images/intensity-med.png", "../images/intensity-high.png"];
+  var image = document.getElementById("intensity")
+  var lvl = level[z];
+  image.src = lvl;
+  z++;
+  if (z > 2) {z = 0};
+
+}
+
+      //     CHANGE   NAME       //
 function newname () {
   var firstnames = ["Hairy ", "Alarming ", "Sweet ", "Sour ", "Floating ", "Big ", "Cool ", "Intimidating ", "Small ", "Grim ", "Horrid ", "Pretty ", "Mean ", "Nice ", "Ghastly ", "Good ", "Evil ", "Sharp ", "Quick ", "One ", "Ten ", "Long ", "Short ", "Flaming ", "Frigid "];
   var middlenames = ["Toe", "Finger", "Tooth", "Tail", "Horn", "Foot", "Hand", "Eye", "Candy", "Scar", "Ear", "Nose", "Beak", "Form", "Mouth", "Claw", "Breath", "Voice", "Paw", "Mind", "Fin", "Shadow", "Coffee", "Tea", "Cheek"];
