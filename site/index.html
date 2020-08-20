@@ -76,12 +76,6 @@
 
     </div>
 
-
-<!--      HOME TILES    -->
-
-<!-- <img src="../images/1_sm.png" alt="House pick image" class="img-responsive visible-xs"> -->
-    
-
  <!--     HOME TILES    -->
 
     <div id="home-tiles" class="row">
@@ -89,8 +83,7 @@
 
       <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
         <div id="costume-tile">
-          <div><a href="costume_choice.html" class="home-tile-brand">&lt</a></div>
-          <p><a href="costume_choice.html" class="home-tile-brand">&gt</a></p>
+          <img src="../images/what_char.png" alt="Next Costume" id="imgToSwitch" onclick="switchImg()">
           <span>Costume</span>
         </div>
       </div>
@@ -98,8 +91,7 @@
 
       <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
         <div id="houses-tile">
-          <div><a href="house_pick.html" class="home-tile-brand">&lt</a></div>
-          <p><a href="house_pick.html" class="home-tile-brand">&gt</a></p>
+          <img src="../images/pick_house.png" alt="Next Costume" id="homeToSwitch" onclick="switchhome()">
           <span>House</span>
         </div>
       </div>
@@ -119,26 +111,53 @@
 
           <form action="/action_page.php">
             <br><br><br>        
-            <label style="color: #bf0a0a" for="email">E-mail:</label>
-            <input type="email" id="email" name="email"><br>
-            <label style="color: #bf0a0a" for="pwd">Password:</label>
-            <input style="color: #000000" type="password" id="pwd" name="pwd"><br>
+            <label style="background-color: rgba(0, 0, 0, 0.5)" style="color: #bf0a0a" for="email">E-mail:</label>
+            <input style="background-color: rgba(0, 0, 0, 0.5)" type="email" id="email" name="email"><br>
+            <label style="background-color: rgba(0, 0, 0, 0.5)"style="color: #bf0a0a" for="pwd">Password:</label>
+            <input style="background-color: rgba(0, 0, 0, 0.5)" style="color: #000000" type="password" id="pwd" name="pwd"><br>
             <input class="resizedTextbox" type="submit" STYLE="color: #000000" value="JOIN">
           </form>
         </div>
       </div>
 
 <script>
+      //    CHANGE COSTUME   //
+x = 0;
+function switchImg() {
+var closet = ["../images/char_group/alien.png", "../images/char_group/witch.png", "../images/char_group/devil.png"];
+
+ var image = document.getElementById("imgToSwitch");
+ var choice = closet[x];
+ image.src = choice;
+ x++;
+ if (x > 2) {x = 0};
+}
+
+     //     CHANGE HOUSE    //
+y = 0;
+function switchhome() {
+var closet = ["../images/char_group/alien.png", "../images/char_group/witch.png", "../images/char_group/devil.png"];
+
+ var image = document.getElementById("homeToSwitch");
+ var choice = closet[y];
+ image.src = choice;
+ y++;
+ if (y > 2) {y = 0};
+}
+
+      //     CHANGE NAME       //
 function newname () {
-  var firstnames = ["Bif ", "Jon ", "Ping ", "Stan "];
-  var middlenames = ["Lee", "Pon", "Free", "Kong"];
-  var lastnames = [" Tong", " Smith", " Morgan", " Klien"];
+  var firstnames = ["Hairy ", "Alarming ", "Sweet ", "Sour ", "Floating ", "Big ", "Cool ", "Intimidating ", "Small ", "Grim ", "Horrid ", "Pretty ", "Mean ", "Nice ", "Ghastly ", "Good ", "Evil ", "Sharp ", "Quick ", "One ", "Ten ", "Long ", "Short ", "Flaming ", "Frigid "];
+  var middlenames = ["Toe", "Finger", "Tooth", "Tail", "Horn", "Foot", "Hand", "Eye", "Candy", "Scar", "Ear", "Nose", "Beak", "Form", "Mouth", "Claw", "Breath", "Voice", "Paw", "Mind", "Fin", "Shadow", "Coffee", "Tea", "Cheek"];
+  var lastnames = [" Bear", " Lion", "  Zombie", "  Ghoul", "  Vampire", "  Revenant", "  Skeleton", "  Ghost", "  Wolf", "  Rabbit", "  Pirate", "  Dragon", "  Shark", "  Demon", "  Reaper", "  Alien", "  King", "  Queen", "  Jester", "  Knight", "  Princess", "  Gorrila", "  Monkey", "  Robot", " Insect"];
 var ri1 = firstnames[Math.floor(Math.random() * firstnames.length)];
 var ri2 = middlenames[Math.floor(Math.random() * middlenames.length)];
 var ri3 = lastnames[Math.floor(Math.random() * lastnames.length)];
 newn = ri1.concat(ri2, ri3);
 document.getElementById("newn").innerText = newn
 }
+
+    //    CHNAGE TITLE   //
 function newtitle () {
   var firstnames = ["Bif ", "Jon ", "Ping ", "Stan "];
   var middlenames = ["Lee", "Pon", "Free", "Kong"];
@@ -173,7 +192,8 @@ document.getElementById("newt").innerText = newt
           <hr class="visible-xs">        
       </section>
       <section id="credits" class="col-sm-4">
-        <span>Credits:</span><br><br>
+        <span>Credits:</span><br>
+        <p>content contributors: Daniel Dyke</p>
         <a href=”https://www.zapsplat.com”>Sound effects and music obtained from zapsplat.com</a>        
       </section>
     </div>

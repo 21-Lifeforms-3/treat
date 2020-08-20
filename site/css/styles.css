@@ -76,16 +76,15 @@ body {
 }
 .Nbutton, .Tbutton {
 	position: absolute;
-	background-color: #d1c5c5;
-	font-size: 1em;
+	background-color: rgba(0, 0, 0, 0.5);
+	font-size: .9em;
 	padding: 5px 5px;
-	color: #712db5;
 	width: 45%;
 	opacity: .9;
 	border-radius: 10px;
 }
 .nameInput {
-	color: #0f13f7;
+	color: #ffffff;
 	font-size: 1.1em;
 	font-style: italic; 
 }
@@ -147,14 +146,6 @@ body {
 #costume-tile:hover, #houses-tile:hover, #join-tile:hover {
 	box-shadow: 0 1px 10px 5px #000000;
 }
-#costume-tile {
-	background: url('../images/what_char.png') no-repeat;
-	background-position: center;
-}
-#houses-tile {
-	background: url('../images/pick_house.png') no-repeat;
-	background-position: center;
-}
 #join-tile {
 	background: url('../images/join_img.png') no-repeat;
 	background-position: center;
@@ -195,6 +186,9 @@ body {
 	color: #000000;
 }
 /** END HELP PAGE  **/
+
+/**  TOWN PAGE   **/
+
 
 /**   end home page    **/
 
