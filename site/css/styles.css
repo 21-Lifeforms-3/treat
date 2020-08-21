@@ -342,6 +342,9 @@ body {
 	background: url('../images/join_img_sm.png') no-repeat;
 	margin-top: 35px;
 	}
+	#house-lot {
+	width: 25%;    
+	}
 }
 
 /*   extra small devices only   */
@@ -379,5 +382,9 @@ body {
     }
     .panel-footer section hr {
     	width: 50%;
-    }    
+    }
+    #house-lot {
+	width: 30%;
+	margin-left: 155px;    
+	}
 }

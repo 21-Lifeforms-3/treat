@@ -38,27 +38,27 @@
         <ul id="nav-list" class="nav navbar-nav navbar-right">      
           
           <li>
-            <a href="log_page">              
+            <a href="log_page.html">              
               <div id="login-img" alt="Log in image" class="hidden-xs"></div> Enter</a>
           </li>
           <li>
-            <a href="help_page">              
+            <a href="help_page.html">              
               <div id="help-img" alt="Help image" class="hidden-xs"></div> Help</a>
           </li>
           <li>
-            <a href="awards_page">
+            <a href="awards_page.html">
               <div id="awards-img" alt="Awards image" class="hidden-xs"></div> Awards</a>
           </li>
           <li>
-            <a href="store_page">
+            <a href="store_page.html">
               <div id="shop-img" alt="Shop image" class="hidden-xs"></div> Shop</a>
           </li>
           <li>
-            <a href="town_page">
+            <a href="town_page.html">
               <div id="neighbor-img" alt="Neighborhood image" class="hidden-xs"></div> Town</a>
           </li>
           <li>
-            <a href="house_page">
+            <a href="house_page.html">
               <div id="home-img" alt="Home image" class="hidden-xs"></div> Home</a>
           </li>
         </ul>
@@ -134,8 +134,8 @@ function switchImg() {
 var closet = ["../images/char_group/alien.png", "../images/char_group/witch.png", "../images/char_group/devil.png", "../images/char_group/bear.png", "../images/char_group/bee.png", "../images/char_group/convict.png", "../images/char_group/elf.png", "../images/char_group/frankmonster.png", "../images/char_group/girl-pirate.png", "../images/char_group/girl-pumpkin.png", "../images/char_group/gray-vamp.png", "../images/char_group/green-witch.png", "../images/char_group/mermaid.png", "../images/char_group/mummy.png", "../images/char_group/pirate.png", "../images/char_group/pumpkin.png", "../images/char_group/ridinghood.png", "../images/char_group/vamp.png"];
 
  var image = document.getElementById("imgToSwitch");
- var choice = closet[x];
- image.src = choice;
+ var choicex = closet[x];
+ image.src = choicex;
  x++;
  if (x > 17) {x = 0};
 }
@@ -146,8 +146,8 @@ function switchhome() {
 var closet = ["../images/home_group/2.png", "../images/home_group/3.png", "../images/home_group/4.png", "../images/home_group/5.png", "../images/home_group/6.png", "../images/home_group/7.png", "../images/home_group/8.png", "../images/home_group/9.png", "../images/home_group/10.png", "../images/home_group/11.png", "../images/home_group/12.png", "../images/home_group/13.png"];
 
  var image = document.getElementById("homeToSwitch");
- var choice = closet[y];
- image.src = choice;
+ var choicey = closet[y];
+ image.src = choicey;
  y++;
  if (y > 11) {y = 0};
 }
@@ -186,6 +186,23 @@ function newtitle () {
   var ri3 = lastnames[Math.floor(Math.random() * lastnames.length)];
 newt = ri1.concat(ri2, ri3);
 document.getElementById("newt").innerText = newt
+}
+
+     //  STORE USER DATA   //
+function storeUser() {
+//   pwd, email, choicex, choicey, lvl, newn, newt, ...
+  var userData = [];
+  userData[0] = getElementById(email).innerText = email;
+  userData[1] = getElementById(choicex).innerText = choicex;
+  userData[2] = getElementById(choicey).innerText = choicey;
+  userData[3] = getElementById(lvl).innerText = lvl;
+  userData[4] = getElementById(newn).innerText = newn;
+  userData[5] = getElementById(newt).innerText = newt;
+  Pname = getElementById(pwd).innerText = pwd;
+  localStorage.setItem("Pname", JSON.stringify(userData));
+}
+function readUser() {
+  
 }
 
 </script>
