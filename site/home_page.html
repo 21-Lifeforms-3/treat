@@ -7,7 +7,6 @@
 	<link rel="stylesheet" href="css/styles.css">
 	<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Oxygen:wght@700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Lora:wght@700&family=Oxygen:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -33,13 +32,35 @@
         <!--  navigation buttons   -->      
         
         <ul id="nav-list" class="nav navbar-nav navbar-right">      
+          
+          <li>
+            <a href="log_page.html">              
+              <div id="login-img" alt="Log in image" class="hidden-xs"></div> Enter</a>
+          </li>
           <li>
             <a href="help_page.html">              
               <div id="help-img" alt="Help image" class="hidden-xs"></div> Help</a>
           </li>
+          <li>
+            <a href="awards_page.html">
+              <div id="awards-img" alt="Awards image" class="hidden-xs"></div> Awards</a>
+          </li>
+          <li>
+            <a href="store_page.html">
+              <div id="shop-img" alt="Shop image" class="hidden-xs"></div> Shop</a>
+          </li>
+          <li>
+            <a href="town_page.html">
+              <div id="neighbor-img" alt="Neighborhood image" class="hidden-xs"></div> Town</a>
+          </li>
+          <li>
+            <a href="house_page.html">
+              <div id="home-img" alt="Home image" class="hidden-xs"></div> Home</a>
+          </li>
         </ul>
  <!--    end navagation buttons    -->
      
+   <!--      end navagation buttons    -->
     </div> 
     </nav>
   </header>
@@ -47,35 +68,7 @@
 
 
   <div id="main-content" class="container">
-    <div id="home-tiles" class="row">
-
-      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-        <div id="img-tile">
-          <img src="../images/key_img.png" alt="Enter Password">     
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-         <div id="join-tile" class="text-center">        
-          <form action="/action_page.php">
-            <br><h2>ENTER</h2><br>        
-            <label style="background-color: rgba(0, 0, 0, 0.5)" style="color: #bf0a0a" for="email">E-mail:</label>;
-            <input style="background-color: rgba(0, 0, 0, 0.5)" type="email" id="email" name="email"><br><br>
-            <label style="background-color: rgba(0, 0, 0, 0.5)"style="color: #bf0a0a" for="pwd">Password:</label>;
-            <input style="background-color: rgba(0, 0, 0, 0.5)" style="color: #000000" type="password" id="pwd" name="pwd">;
-
-          <button class="Jbutton" onclick="readUser()">SUBMIT<div id="newt"></div></button><br> 
-          </form>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-        <div id="img-tile">
-          <img src="../images/boy_door.png" alt="Enter Password">     
-        </div>
-      </div> 
-
-    </div>
+    
 
   </div><!--    END OF MAIN CONTENT   -->
 

@@ -150,7 +150,7 @@ body {
 		box-shadow: 0 0 40px #000000;
 		border: 5px solid: #000000;
 }
-#costume-tile, #houses-tile, #join-tile {
+#costume-tile, #houses-tile, #join-tile, #img-tile{
 	height: 250px;
 	width: 100%;
 	margin-bottom: 15;
@@ -179,6 +179,10 @@ body {
 }
 #join-tile img {
 	margin-left: -2px;
+}
+#join-tile h2 {
+	color: #000;
+	font-family: 'Bangers', cursive;
 }
 #costume-tile div, #houses-tile div {
 	position: absolute;
@@ -321,6 +325,9 @@ body {
 		background: url('../images/1_md.png') no-repeat;
 		height: 330px;
 		margin-top: 15px;
+	}
+	.nameInput {
+	font-size: .9em;
 	}
 }
 

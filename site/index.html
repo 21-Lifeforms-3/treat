@@ -12,6 +12,7 @@
 <body>
     <script src="../js/jquery-2.1.4.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/MYscripts.js"></script>
  <!--   <script src="../js/script.js"></script> -->
 
   <header>
@@ -44,22 +45,6 @@
           <li>
             <a href="help_page.html">              
               <div id="help-img" alt="Help image" class="hidden-xs"></div> Help</a>
-          </li>
-          <li>
-            <a href="awards_page.html">
-              <div id="awards-img" alt="Awards image" class="hidden-xs"></div> Awards</a>
-          </li>
-          <li>
-            <a href="store_page.html">
-              <div id="shop-img" alt="Shop image" class="hidden-xs"></div> Shop</a>
-          </li>
-          <li>
-            <a href="town_page.html">
-              <div id="neighbor-img" alt="Neighborhood image" class="hidden-xs"></div> Town</a>
-          </li>
-          <li>
-            <a href="house_page.html">
-              <div id="home-img" alt="Home image" class="hidden-xs"></div> Home</a>
           </li>
         </ul>
  <!--    end navagation buttons    -->
@@ -96,17 +81,13 @@
         </div>
       </div>
 
-
-<!--<script src="../js/Jscripts.js"></script>-->
-
-
       <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
         
          <div id="join-tile" class="text-center">
           
           <button class="Nbutton" onclick="newname()">Player Name:<div id="newn" class="nameInput"></div></button>
           
-          <button class="Tbutton" onclick="newtitle()">House title:<div id="newt" class="nameInput"></div></button><br>
+          <button class="Tbutton" onclick="newtitle()">House title:<div id="newt" class="nameInput"></div></button><br><br class="visible-lg visible-xs visible-sm">
           
 
           <form action="/action_page.php">
@@ -124,89 +105,6 @@
     </div><!--   END OF HOME TILES      --> 
 
  </div><!--    END OF MAIN CONTENT   -->
-
-      <!-- ******     START   JAVA    ******   -->
-
-<script>
-      //    CHANGE COSTUME   //
-x = 0;
-function switchImg() {
-var closet = ["../images/char_group/alien.png", "../images/char_group/witch.png", "../images/char_group/devil.png", "../images/char_group/bear.png", "../images/char_group/bee.png", "../images/char_group/convict.png", "../images/char_group/elf.png", "../images/char_group/frankmonster.png", "../images/char_group/girl-pirate.png", "../images/char_group/girl-pumpkin.png", "../images/char_group/gray-vamp.png", "../images/char_group/green-witch.png", "../images/char_group/mermaid.png", "../images/char_group/mummy.png", "../images/char_group/pirate.png", "../images/char_group/pumpkin.png", "../images/char_group/ridinghood.png", "../images/char_group/vamp.png"];
-
- var image = document.getElementById("imgToSwitch");
- var choicex = closet[x];
- image.src = choicex;
- x++;
- if (x > 17) {x = 0};
-}
-
-     //     CHANGE HOUSE    //
-y = 0;
-function switchhome() {
-var closet = ["../images/home_group/2.png", "../images/home_group/3.png", "../images/home_group/4.png", "../images/home_group/5.png", "../images/home_group/6.png", "../images/home_group/7.png", "../images/home_group/8.png", "../images/home_group/9.png", "../images/home_group/10.png", "../images/home_group/11.png", "../images/home_group/12.png", "../images/home_group/13.png"];
-
- var image = document.getElementById("homeToSwitch");
- var choicey = closet[y];
- image.src = choicey;
- y++;
- if (y > 11) {y = 0};
-}
-
-       //    INTENSITY   LEVEL      //
-z = 0;
-function swFright() {
-  var level = ["../images/intensity-low.png", "../images/intensity-med.png", "../images/intensity-high.png"];
-  var image = document.getElementById("intensity")
-  var lvl = level[z];
-  image.src = lvl;
-  z++;
-  if (z > 2) {z = 0};
-
-}
-
-      //     CHANGE   NAME       //
-function newname () {
-  var firstnames = ["Hairy ", "Alarming ", "Sweet ", "Sour ", "Floating ", "Big ", "Cool ", "Intimidating ", "Small ", "Grim ", "Horrid ", "Pretty ", "Mean ", "Nice ", "Ghastly ", "Good ", "Evil ", "Sharp ", "Quick ", "One ", "Ten ", "Long ", "Short ", "Flaming ", "Frigid "];
-  var middlenames = ["Toe", "Finger", "Tooth", "Tail", "Horn", "Foot", "Hand", "Eye", "Candy", "Scar", "Ear", "Nose", "Beak", "Form", "Mouth", "Claw", "Breath", "Voice", "Paw", "Mind", "Fin", "Shadow", "Coffee", "Tea", "Cheek"];
-  var lastnames = [" Bear", " Lion", "  Zombie", "  Ghoul", "  Vampire", "  Revenant", "  Skeleton", "  Ghost", "  Wolf", "  Rabbit", "  Pirate", "  Dragon", "  Shark", "  Demon", "  Reaper", "  Alien", "  King", "  Queen", "  Jester", "  Knight", "  Princess", "  Gorrila", "  Monkey", "  Robot", " Insect"];
- var ri1 = firstnames[Math.floor(Math.random() * firstnames.length)];
- var ri2 = middlenames[Math.floor(Math.random() * middlenames.length)];
- var ri3 = lastnames[Math.floor(Math.random() * lastnames.length)];
-newn = ri1.concat(ri2, ri3);
-document.getElementById("newn").innerText = newn
-}
-
-    //    CHNAGE TITLE   //
-function newtitle () {
-  var firstnames = ["Bif ", "Jon ", "Ping ", "Stan "];
-  var middlenames = ["Lee", "Pon", "Free", "Kong"];
-  var lastnames = [" Tong", " Smith", " Morgan", " Klien"];
-  var ri1 = firstnames[Math.floor(Math.random() * firstnames.length)];
-  var ri2 = middlenames[Math.floor(Math.random() * middlenames.length)];
-  var ri3 = lastnames[Math.floor(Math.random() * lastnames.length)];
-newt = ri1.concat(ri2, ri3);
-document.getElementById("newt").innerText = newt
-}
-
-     //  STORE USER DATA   //
-function storeUser() {
-//   pwd, email, choicex, choicey, lvl, newn, newt, ...
-  var userData = [];
-  userData[0] = getElementById(email).innerText = email;
-  userData[1] = getElementById(choicex).innerText = choicex;
-  userData[2] = getElementById(choicey).innerText = choicey;
-  userData[3] = getElementById(lvl).innerText = lvl;
-  userData[4] = getElementById(newn).innerText = newn;
-  userData[5] = getElementById(newt).innerText = newt;
-  Pname = getElementById(pwd).innerText = pwd;
-  localStorage.setItem("Pname", JSON.stringify(userData));
-}
-function readUser() {
-  
-}
-
-</script>
-<!-- ******      END JAVA    ******   -->
 
  <footer class="panel-footer">
    <div class="container">
