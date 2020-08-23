@@ -40,10 +40,10 @@ function newname () {
   var firstnames = ["Hairy ", "Alarming ", "Sweet ", "Sour ", "Floating ", "Big ", "Cool ", "Intimidating ", "Small ", "Grim ", "Horrid ", "Pretty ", "Mean ", "Nice ", "Ghastly ", "Good ", "Evil ", "Sharp ", "Quick ", "One ", "Ten ", "Long ", "Short ", "Flaming ", "Frigid "];
   var middlenames = ["Toe", "Finger", "Tooth", "Tail", "Horn", "Foot", "Hand", "Eye", "Candy", "Scar", "Ear", "Nose", "Beak", "Form", "Mouth", "Claw", "Breath", "Voice", "Paw", "Mind", "Fin", "Shadow", "Coffee", "Tea", "Cheek"];
   var lastnames = [" Bear", " Lion", "  Zombie", "  Ghoul", "  Vampire", "  Revenant", "  Skeleton", "  Ghost", "  Wolf", "  Rabbit", "  Pirate", "  Dragon", "  Shark", "  Demon", "  Reaper", "  Alien", "  King", "  Queen", "  Jester", "  Knight", "  Princess", "  Gorrila", "  Monkey", "  Robot", " Insect"];
- var ri1 = firstnames[Math.floor(Math.random() * firstnames.length)];
- var ri2 = middlenames[Math.floor(Math.random() * middlenames.length)];
- var ri3 = lastnames[Math.floor(Math.random() * lastnames.length)];
-newn = ri1.concat(ri2, ri3);
+ var ni1 = firstnames[Math.floor(Math.random() * firstnames.length)];
+ var ni2 = middlenames[Math.floor(Math.random() * middlenames.length)];
+ var ni3 = lastnames[Math.floor(Math.random() * lastnames.length)];
+newn = ni1.concat(ni2, ni3);
 document.getElementById("newn").innerText = newn
 }
 
@@ -52,10 +52,10 @@ function newtitle () {
   var firstnames = ["Eerie ", "Dark ", "Misty ", "Haunted ", "Frightful ", "Comfortable ", "Uncomfortable ", "Decripit ", "Ruined ", "Pristine ", "Filthy ", "Disharmonious ", "Candlelight ", "Bookless ", "Gardened ", "Statlier ", "Tucked ", "Livable ", "Unlivable ", "Invaded ", "Spacious ", "Peaceful ", "Unbroken ", "Undisturbed ", "Secluded "];
   var middlenames = ["Oceanfront", "Hillside", "Swamp", "Town", "Village", "City", "Forest", "Hideaway", "Mountainside", "Highland", "Neighborhood", "Woodland", "Vacation", "Uptown", "Rural", "Hilltop", "Mountaintop", "Farm", "Downstream", "Mobile", "Riverfront", "Beachfront", "Lakefront", "Treetop", "Waterside"];
   var lastnames = [" Tower", " Home", " Cottage", " Cabin", " Mansion", " Tent", " Treehouse", " Castle", " Bungalow", " Apartmant", " Yurt", " Igloo", " Palace", " Cave", " Chalet", " Villa", " Condominium", " Duplex", " Château", " McMansion", " Suite", " Dormitory", " Shack", " Barndominium", " Fort"];
-  var ri1 = firstnames[Math.floor(Math.random() * firstnames.length)];
-  var ri2 = middlenames[Math.floor(Math.random() * middlenames.length)];
-  var ri3 = lastnames[Math.floor(Math.random() * lastnames.length)];
-newt = ri1.concat(ri2, ri3);
+  var ti1 = firstnames[Math.floor(Math.random() * firstnames.length)];
+  var ti2 = middlenames[Math.floor(Math.random() * middlenames.length)];
+  var ti3 = lastnames[Math.floor(Math.random() * lastnames.length)];
+newt = ti1.concat(ti2, ti3);
 document.getElementById("newt").innerText = newt
 }
 

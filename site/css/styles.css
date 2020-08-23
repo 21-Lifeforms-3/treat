@@ -223,6 +223,7 @@ body {
 	}
 }
 #house-lot {
+	background: url("../images/home_group/home_lot_pics/2.png");
 	position: relative;
 	width: 15%;
 	height: 100px;
@@ -232,7 +233,22 @@ body {
 	margin-left: 100px;
 	margin-bottom: 80px;
 	float: left;
-	overflow: hidden; 
+	overflow: hidden;
+	font-size: .8em; 
+}
+#lot-sign {
+	position: absolute;
+	background: url("../images/home_sign.png") no-repeat;
+	width: 150px;
+	height: 75px;
+	margin-top: 30px;
+	margin-left: -20px;
+}
+#lot-title {	
+	margin-left: 40px;
+	line-height: 10%;
+	font-size: .9em;
+	color: #000;
 }
 
 /**   end home page    **/
@@ -308,6 +324,34 @@ body {
 	margin-right: 40px;
 }
 
+/**    STORE PAGES     **/
+#storeStyle {
+	height: 450px;
+}
+#store-doors {
+	position: relative;
+	width: 10%;
+	height: 15%;		
+}
+.pop-zombie-blue .pop-zombie-green {
+	position: relative;
+	display: inline-block;
+}
+.pop-zombie-blue:hover {
+	position: relative;
+	width: 250px;
+	height: 350px;
+	margin-top: -350px;
+	background: url("../images/pop_zombie_blue.png") no-repeat;
+}
+.pop-zombie-green:hover {
+	position: relative;
+	width: 250px;
+	height: 350px;
+	margin-top: -350px;
+	background: url("../images/pop_zombie_green.png") no-repeat;
+}
+
 /*   large devices only   */
 
 @media (min-width: 1200px) {
@@ -315,6 +359,26 @@ body {
 		background: url('../images/1_lg.png') no-repeat;
 		height: 450px;
 		margin-top: 15px;
+	}
+	#storeStyle {
+		background: url('../images/store_front_lg.png') no-repeat;
+		height: 450px;
+	}
+	#isleStyle {
+		background: url('../images/store_isle_lg.png') no-repeat;
+		height: 450px;
+	}
+	#buyStyle {
+		background: url('../images/store_buy_lg.png') no-repeat;
+		height: 450px;
+	}
+	#store-doors {
+		margin-left: 530px;
+		margin-top: 352px;
+	}
+	.pop-zombie-blue {
+		margin-top: -45px;
+		margin-left: 475px;
 	}
 }
 
@@ -328,6 +392,26 @@ body {
 	}
 	.nameInput {
 	font-size: .9em;
+	}
+	#storeStyle {
+		background: url('../images/store_front_md.png') no-repeat;
+		height: 450px;
+	}
+	#isleStyle {
+		background: url('../images/store_isle_md.png') no-repeat;
+		height: 450px;
+	}
+	#buyStyle {
+		background: url('../images/store_buy_md.png') no-repeat;
+		height: 450px;
+	}
+	#store-doors {
+		margin-left: 438px;
+		margin-top: 353px;
+	}
+	.pop-zombie-blue {
+		margin-top: -45px;
+		margin-left: 400px;
 	}
 }
 
@@ -352,15 +436,35 @@ body {
 	#house-lot {
 	width: 25%;    
 	}
+	#storeStyle {
+		background: url('../images/store_front_sm.png') no-repeat;
+		height: 450px;
+	}
+	#isleStyle {
+		background: url('../images/store_isle_sm.png') no-repeat;
+		height: 450px;
+	}
+	#buyStyle {
+		background: url('../images/store_buy_sm.png') no-repeat;
+		height: 450px;
+	}
+	#store-doors {
+		margin-left: 321px;
+		margin-top: 351px;
+	}
+	.pop-zombie-blue {
+		margin-top: -43px;
+		margin-left: 295px;
+	}
 }
 
 /*   extra small devices only   */
 
 @media (max-width: 767px) {
     .container .jumbotron {
-	    <div class="jumbotron">     
- 		<img src="../images/1_sm.png" alt="House pick image">;
-		padding: 0px;
+	    background: url('../images/1_xs.png');     
+ 		height: 150px;
+ 		margin-top: 15px;
 	}	
 	#nav-list {
 	font-size: 1em;
@@ -393,5 +497,25 @@ body {
     #house-lot {
 	width: 30%;
 	margin-left: 155px;    
+	}
+	#storeStyle {
+		background: url('../images/store_front_xs.png') no-repeat;
+		height: 300px;
+	}
+	#isleStyle {
+		background: url('../images/store_isle_xs.png') no-repeat;
+		height: 300px;
+	}
+	#buyStyle {
+		background: url('../images/store_buy_xs.png') no-repeat;
+		height: 300px;
+	}
+	#store-doors {
+		margin-left: 140px;
+		margin-top: 234px;
+	}
+	.pop-zombie-blue {
+		margin-top: -31px;
+		margin-left: 83px;
 	}
 }
