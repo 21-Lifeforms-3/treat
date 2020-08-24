@@ -223,7 +223,7 @@ body {
 	}
 }
 #house-lot {
-	background: url("../images/home_group/home_lot_pics/2.png");
+	background: url("../images/home_group/home_lot_pics/2.png") no-repeat;
 	position: relative;
 	width: 15%;
 	height: 100px;
@@ -323,7 +323,64 @@ body {
 	border-color: #000000;
 	margin-right: 40px;
 }
-
+#store-eggs {
+	background: url('../images/store_eggs.png') no-repeat;
+	margin-top: 8px;
+	margin-left: 5px;
+	width: 50%;
+	height: 40%;
+}
+#store-tomato {
+	background: url('../images/store_tomato.png') no-repeat;
+	margin-top: 30px;
+	width: 50%;
+	height: 40%;
+}
+#store-tp {
+	background: url('../images/store_tp.png') no-repeat;
+	margin-top: 20px;
+	width: 50%;
+	height: 40%;
+}
+#store-pumpkin {
+	background: url('../images/store_pumpkin.png') no-repeat;
+	margin-left: 25px;
+	margin-top: -10px;
+	width: 50%;
+	height: 50%;
+}
+#store-cream {
+	background: url('../images/store_cream.png') no-repeat;
+	margin-left: 60px;
+	margin-top: -3px;
+	width: 50%;
+	height: 40%;
+}
+#store-deco {
+	background: url('../images/store.png') no-repeat;
+	width: 50%;
+	height: 40%;
+}
+#store-candy {
+	background: url('../images/store_candy.png') no-repeat;
+	margin-top: 17px;
+	width: 50%;
+	height: 40%;
+}
+#store-treats {
+	background: url('../images/store_treats.png') no-repeat;
+	width: 50%;
+	height: 50%;
+	margin-top: 4px;
+	margin-left: 60px;
+}
+#store-deco {
+	background: url('../images/store_deco.png') no-repeat;
+	margin-top: 25px;
+	margin-left: 55px;
+	width: 50%;
+	height: 50%;
+}
 /**    STORE PAGES     **/
 #storeStyle {
 	height: 450px;
@@ -351,6 +408,18 @@ body {
 	margin-top: -350px;
 	background: url("../images/pop_zombie_green.png") no-repeat;
 }
+#shelf-left {
+	position: relative;
+	width: 16.66666%;
+	height: 110px;
+	border: 1px hidden #f06018;
+	margin-top: 0;
+	margin-left: 0;
+	margin-bottom: 0;
+	float: left;
+	overflow: hidden;
+	font-size: .8em; 
+}
 
 /*   large devices only   */
 
@@ -363,14 +432,17 @@ body {
 	#storeStyle {
 		background: url('../images/store_front_lg.png') no-repeat;
 		height: 450px;
+		box-shadow: 0 1px 4px 2px #000000;
 	}
 	#isleStyle {
 		background: url('../images/store_isle_lg.png') no-repeat;
 		height: 450px;
+		box-shadow: 0 1px 4px 2px #000000;
 	}
 	#buyStyle {
 		background: url('../images/store_buy_lg.png') no-repeat;
 		height: 450px;
+		box-shadow: 0 1px 4px 2px #000000;
 	}
 	#store-doors {
 		margin-left: 530px;
@@ -379,6 +451,10 @@ body {
 	.pop-zombie-blue {
 		margin-top: -45px;
 		margin-left: 475px;
+	}
+	#store-pumpkin {
+		margin-top: -10px;
+		margin-left: 48px;
 	}
 }
 
@@ -396,14 +472,17 @@ body {
 	#storeStyle {
 		background: url('../images/store_front_md.png') no-repeat;
 		height: 450px;
+		box-shadow: 0 1px 4px 2px #000000;
 	}
 	#isleStyle {
 		background: url('../images/store_isle_md.png') no-repeat;
 		height: 450px;
+		box-shadow: 0 1px 4px 2px #000000;
 	}
 	#buyStyle {
 		background: url('../images/store_buy_md.png') no-repeat;
 		height: 450px;
+		box-shadow: 0 1px 4px 2px #000000;
 	}
 	#store-doors {
 		margin-left: 438px;
@@ -412,6 +491,9 @@ body {
 	.pop-zombie-blue {
 		margin-top: -45px;
 		margin-left: 400px;
+	}
+	#store-cream {
+		margin-top: 3px;
 	}
 }
 
@@ -439,14 +521,17 @@ body {
 	#storeStyle {
 		background: url('../images/store_front_sm.png') no-repeat;
 		height: 450px;
+		box-shadow: 0 1px 4px 2px #000000;
 	}
 	#isleStyle {
 		background: url('../images/store_isle_sm.png') no-repeat;
 		height: 450px;
+		box-shadow: 0 1px 4px 2px #000000;
 	}
 	#buyStyle {
 		background: url('../images/store_buy_sm.png') no-repeat;
 		height: 450px;
+		box-shadow: 0 1px 4px 2px #000000;
 	}
 	#store-doors {
 		margin-left: 321px;
@@ -455,6 +540,21 @@ body {
 	.pop-zombie-blue {
 		margin-top: -43px;
 		margin-left: 295px;
+	}
+	#store-cream {
+		margin-top: 12px;
+	}
+	#store-candy {
+		margin-top: 5px;
+		margin-left: 12px;
+	}
+	#store-treats {
+		margin-top: 6px;
+		margin-left: 50px
+	}
+	#store-deco {
+	margin-top: 21px;
+	margin-left: 45px;
 	}
 }
 
@@ -501,14 +601,17 @@ body {
 	#storeStyle {
 		background: url('../images/store_front_xs.png') no-repeat;
 		height: 300px;
+		box-shadow: 0 1px 4px 2px #000000;
 	}
 	#isleStyle {
 		background: url('../images/store_isle_xs.png') no-repeat;
 		height: 300px;
+		box-shadow: 0 1px 4px 2px #000000;
 	}
 	#buyStyle {
 		background: url('../images/store_buy_xs.png') no-repeat;
 		height: 300px;
+		box-shadow: 0 1px 4px 2px #000000;
 	}
 	#store-doors {
 		margin-left: 140px;
@@ -517,5 +620,34 @@ body {
 	.pop-zombie-blue {
 		margin-top: -31px;
 		margin-left: 83px;
+	}
+	#shelf-left {
+	position: relative;
+	height: 75px;
+	}
+	#store-pumpkin {
+		margin-top: 7px;
+	}
+	#store-tomato {
+		width: 40%;
+	}
+	#store-cream {
+		margin-top: -12px;
+	}
+	#store-eggs {
+		margin-top: 0;
+		margin-left: 15px;
+	}
+		#store-candy {
+		margin-top: -12px;
+		margin-left: 12px;
+	}
+	#store-treats {
+		margin-top: 11px;
+		margin-left: 50px
+	}
+	#store-deco {
+	margin-top: 5px;
+	margin-left: 45px;
 	}
 }
