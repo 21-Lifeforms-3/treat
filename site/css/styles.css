@@ -130,6 +130,9 @@ body {
 .panel-footer div.row {
 	margin-bottom: 35px;
 }
+.panel-footer p {
+	font-size: .7em;
+}
 #hours, #verbage {
 	line-height: 1.5em;
 }
@@ -314,6 +317,7 @@ body {
 	border-color: #000000;
 	margin-left: 40px;
 }
+/**    STORE PAGES     **/
 #store-img {
 	background: url('../images/store.png') no-repeat;
 	width: 300px;
@@ -330,17 +334,47 @@ body {
 	width: 50%;
 	height: 40%;
 }
+#store-eggs:hover {
+	position: relative;
+	margin-top: 0;
+	border-radius: 15px;
+	margin-left: 0;
+	width: 110px;
+	height: 90px;
+	background: url("../images/pop_eggs.png") no-repeat;
+	animation: mymove 1s infinite;
+}
 #store-tomato {
 	background: url('../images/store_tomato.png') no-repeat;
-	margin-top: 30px;
+	margin-top: 37px;
 	width: 50%;
 	height: 40%;
+}
+#store-tomato:hover {
+	position: relative;
+	margin-top: 0;
+	border-radius: 15px;
+	margin-left: 0;
+	width: 110px;
+	height: 90px;
+	background: url("../images/pop_tomato.png") no-repeat;
+	animation: mymove 1s infinite;
 }
 #store-tp {
 	background: url('../images/store_tp.png') no-repeat;
 	margin-top: 20px;
 	width: 50%;
 	height: 40%;
+}
+#store-tp:hover {
+	position: relative;
+	margin-top: 0;
+	border-radius: 15px;
+	margin-left: 0;
+	width: 110px;
+	height: 90px;
+	background: url("../images/pop_tp.png") no-repeat;
+	animation: mymove 1s infinite;
 }
 #store-pumpkin {
 	background: url('../images/store_pumpkin.png') no-repeat;
@@ -349,6 +383,16 @@ body {
 	width: 50%;
 	height: 50%;
 }
+#store-pumpkin:hover {
+	position: relative;
+	margin-top: 0;
+	border-radius: 15px;
+	margin-left: 0;
+	width: 110px;
+	height: 90px;
+	background: url("../images/pop_pumpkin.png") no-repeat;
+	animation: mymove 1s infinite;
+}
 #store-cream {
 	background: url('../images/store_cream.png') no-repeat;
 	margin-left: 60px;
@@ -356,16 +400,31 @@ body {
 	width: 50%;
 	height: 40%;
 }
-#store-deco {
-	background: url('../images/store.png') no-repeat;
-	width: 50%;
-	height: 40%;
+#store-cream:hover {
+	position: relative;
+	margin-top: 0;
+	border-radius: 15px;
+	margin-left: 0;
+	width: 110px;
+	height: 90px;
+	background: url("../images/pop_cream.png") no-repeat;
+	animation: mymove 1s infinite;
 }
 #store-candy {
 	background: url('../images/store_candy.png') no-repeat;
 	margin-top: 17px;
 	width: 50%;
 	height: 40%;
+}
+#store-candy:hover {
+	position: relative;
+	margin-top: 0;
+	border-radius: 15px;
+	margin-left: 0;
+	width: 110px;
+	height: 90px;
+	background: url("../images/pop_candy.png") no-repeat;
+	animation: mymove 1s infinite;
 }
 #store-treats {
 	background: url('../images/store_treats.png') no-repeat;
@@ -374,6 +433,16 @@ body {
 	margin-top: 4px;
 	margin-left: 60px;
 }
+#store-treats:hover {
+	position: relative;
+	margin-top: 0;
+	border-radius: 15px;
+	margin-left: 0;
+	width: 110px;
+	height: 90px;
+	background: url("../images/pop_treats.png") no-repeat;
+	animation: mymove 1s infinite;
+}
 #store-deco {
 	background: url('../images/store_deco.png') no-repeat;
 	margin-top: 25px;
@@ -381,7 +450,35 @@ body {
 	width: 50%;
 	height: 50%;
 }
-/**    STORE PAGES     **/
+#store-deco:hover {
+	position: relative;
+	margin-top: 0;
+	margin-left: 0;
+	border-radius: 15px;
+	width: 110px;
+	height: 90px;
+	background: url("../images/pop_deco.png") no-repeat;
+	animation: mymove 1s infinite;
+}
+@keyframes mymove {
+  50% {box-shadow: 5px 10px 10px blue;}
+}
+#mt-cart {
+	position: absolute;
+	background: url(../images/mt_cart.png) no-repeat;
+	margin-top: 15px;
+	margin-left: 40%;     
+	width: 100%;
+	height: 100%;
+}
+#full-cart {
+	position: absolute;
+	background: url(../images/full_cart.png) no-repeat;
+	margin-top: -150px;
+	margin-left: 45%;
+	width: 100%;
+	height: 100%;
+}
 #storeStyle {
 	height: 450px;
 }
@@ -421,6 +518,29 @@ body {
 	font-size: .8em; 
 }
 
+.dropdown-buy {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-buy-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100px;
+  box-shadow: 5px 1px 5px 0px rgba(0,0,0,0.5);
+  padding: 5px 5px;
+  border: 1px solid #000;
+  color: #000;
+  border-radius: 5px;
+  line-height: .9em;
+  z-index: 1;
+}
+.dropdown-buy:hover .dropdown-buy-content {
+  display: block;
+  overflow-y: scroll;
+  max-height: 100px;
+}
+
 /*   large devices only   */
 
 @media (min-width: 1200px) {
@@ -449,7 +569,7 @@ body {
 		margin-top: 352px;
 	}
 	.pop-zombie-blue {
-		margin-top: -45px;
+		margin-top: -43px;
 		margin-left: 475px;
 	}
 	#store-pumpkin {
@@ -489,7 +609,7 @@ body {
 		margin-top: 353px;
 	}
 	.pop-zombie-blue {
-		margin-top: -45px;
+		margin-top: -44px;
 		margin-left: 400px;
 	}
 	#store-cream {
@@ -538,7 +658,7 @@ body {
 		margin-top: 351px;
 	}
 	.pop-zombie-blue {
-		margin-top: -43px;
+		margin-top: -42px;
 		margin-left: 295px;
 	}
 	#store-cream {
@@ -553,9 +673,12 @@ body {
 		margin-left: 50px
 	}
 	#store-deco {
-	margin-top: 21px;
-	margin-left: 45px;
+		margin-top: 21px;
+		margin-left: 45px;
 	}
+    #mt-cart {
+		margin-left: 25%;
+    }
 }
 
 /*   extra small devices only   */
@@ -625,10 +748,17 @@ body {
 	position: relative;
 	height: 75px;
 	}
+
+
 	#store-pumpkin {
+		:hover; {
+			background: 
+		}
 		margin-top: 7px;
 	}
 	#store-tomato {
+		margin-left: 15px;
+		margin-top: 1px;
 		width: 40%;
 	}
 	#store-cream {
@@ -638,9 +768,9 @@ body {
 		margin-top: 0;
 		margin-left: 15px;
 	}
-		#store-candy {
-		margin-top: -12px;
-		margin-left: 12px;
+	#store-candy {
+	margin-top: -12px;
+	margin-left: 12px;
 	}
 	#store-treats {
 		margin-top: 11px;
@@ -650,4 +780,57 @@ body {
 	margin-top: 5px;
 	margin-left: 45px;
 	}
+	#mt-cart {
+	background: url(../images/mt_cart_sm.png) no-repeat;
+	width: 100%;
+	height: 100%;
+	margin-left: 30%;
+	}
+	.dropdown-buy-content {
+		font-size: .6em;
+		width: 75px;
+	}
+	.dropdown-buy:hover .dropdown-buy-content {
+  		max-height: 75px
+	}
+	#store-deco:hover {
+	width: 60px;
+	height: 60px;
+	background: url("../images/pop_deco_sm.png") no-repeat;
+}
+	#store-treats:hover {	
+	width: 60px;
+	height: 60px;
+	background: url("../images/pop_treats_sm.png") no-repeat;
+}
+	#store-candy:hover {	
+	width: 60px;
+	height: 60px;
+	background: url("../images/pop_candy_sm.png") no-repeat;
+}
+	#store-cream:hover {	
+	width: 60px;
+	height: 60px;
+	background: url("../images/pop_cream_sm.png") no-repeat;
+}
+	#store-pumpkin:hover {	
+	width: 60px;
+	height: 60px;
+	background: url("../images/pop_pumpkin_sm.png") no-repeat;
+}
+	#store-tp:hover {	
+	width: 60px;
+	height: 60px;
+	background: url("../images/pop_tp_sm.png") no-repeat;
+}
+	#store-tomato:hover {	
+	width: 60px;
+	height: 60px;
+	background: url("../images/pop_tomato_sm.png") no-repeat;
+}
+	#store-eggs:hover {	
+	width: 60px;
+	height: 60px;
+	background: url("../images/pop_eggs_sm.png") no-repeat;
+}
 }

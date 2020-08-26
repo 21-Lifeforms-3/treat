@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
 <head>
 
 	<title>Hallowed Addiction</title>
@@ -9,7 +11,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Oxygen:wght@700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body ng-app="myApp" ng-controller="myCtrl">
     <script src="../js/jquery-2.1.4.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
  <!--   <script src="../js/script.js"></script> -->
@@ -118,11 +120,31 @@
           <div id="store-eggs"><br></div>
         </a>
       </div>
+      <div id="shelf-left"></div>
+      <div id="shelf-left"></div>
 
-      
-   
+<!--   SHOPPONG CART  --> 
+<script>
+var app = angular.module("myApp", []);
+app.controller("myCtrl", function($scope) {
+  $scope.records = [
+    "Alfreds Futterkiste",
+    "Berglunds snabbköp",
+    "Centro comercial Moctezuma",
+    "Ernst Handel",
+  ]
+});
+</script>
+      <div id="shelf-left" class="dropdown-buy">
+        <span id="mt-cart"><br></span> 
+        <div class="dropdown-buy-content">
+          <a href="store_buy.html"><p>:::SHOPING:::</p><p>:::::::::LIST::::::::</p></a>
+          <p ng-repeat="x in records">{{x}}</p>
+        </div>
+      </div>
 </div>
- 
+     
+
 <!--    END OF MAIN CONTENT   -->
 
 

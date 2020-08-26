@@ -85,5 +85,5 @@ function readUser() {
   newn = userData[4];
   newt = userData[5];
  // document.getElementById("userData").innerHTML = userData;
-  
 }
+
