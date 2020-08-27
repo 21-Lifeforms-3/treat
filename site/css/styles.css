@@ -100,9 +100,6 @@ body {
 	color: #000000;
 	opacity: .7;
 }
-
-
-
 #nav-list {
 	margin-top: -60px;
 }
@@ -117,9 +114,7 @@ body {
 #nav-list a span {
 	font-size: 1em;
 }
-
 /**  FOOTER  **/
-
 .panel-footer {
 	margin-top: 30px;
 	padding-top: 35px;
@@ -146,9 +141,7 @@ body {
 	color: #4c592e;
 	font-size: .8em;
 }
-
 /**  HOME PAGE  **/
-
 .container .jumbotron {		
 		box-shadow: 0 0 40px #000000;
 		border: 5px solid: #000000;
@@ -463,19 +456,11 @@ body {
 @keyframes mymove {
   50% {box-shadow: 5px 10px 10px blue;}
 }
-#mt-cart {
+#Cimage {
 	position: absolute;
-	background: url(../images/mt_cart.png) no-repeat;
+/*	background: url(../images/mt_cart.png) no-repeat;    */
 	margin-top: 15px;
 	margin-left: 40%;     
-	width: 100%;
-	height: 100%;
-}
-#full-cart {
-	position: absolute;
-	background: url(../images/full_cart.png) no-repeat;
-	margin-top: -150px;
-	margin-left: 45%;
 	width: 100%;
 	height: 100%;
 }
@@ -532,7 +517,7 @@ body {
   border: 1px solid #000;
   color: #000;
   border-radius: 5px;
-  line-height: .9em;
+  line-height: 1.1em;
   z-index: 1;
 }
 .dropdown-buy:hover .dropdown-buy-content {
@@ -577,9 +562,7 @@ body {
 		margin-left: 48px;
 	}
 }
-
 /*   medium devices only   */
-
 @media (min-width: 992px) and (max-width: 1199px) {
 	.container .jumbotron {
 		background: url('../images/1_md.png') no-repeat;
@@ -616,9 +599,7 @@ body {
 		margin-top: 3px;
 	}
 }
-
 /*   small devices only   */
-
 @media (min-width: 768px) and (max-width: 991px) {
 	.container .jumbotron {
 		background: url('../images/1_sm.png') no-repeat;
@@ -676,7 +657,10 @@ body {
 		margin-top: 21px;
 		margin-left: 45px;
 	}
-    #mt-cart {
+    #Eimage {
+		margin-left: 25%;
+    }
+    #Cimage {
 		margin-left: 25%;
     }
 }
@@ -748,8 +732,6 @@ body {
 	position: relative;
 	height: 75px;
 	}
-
-
 	#store-pumpkin {
 		:hover; {
 			background: 
@@ -780,8 +762,8 @@ body {
 	margin-top: 5px;
 	margin-left: 45px;
 	}
-	#mt-cart {
-	background: url(../images/mt_cart_sm.png) no-repeat;
+	#Cimage {
+/*	background: url(../images/mt_cart_sm.png) no-repeat; */
 	width: 100%;
 	height: 100%;
 	margin-left: 30%;

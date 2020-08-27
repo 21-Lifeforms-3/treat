@@ -10,7 +10,6 @@ var closet = ["../images/char_group/alien.png", "../images/char_group/witch.png"
  x++;
  if (x > 17) {x = 0};
 }
-
      //     CHANGE HOUSE    //
 y = 0;
 function switchhome() {
@@ -22,7 +21,6 @@ var closet = ["../images/home_group/2.png", "../images/home_group/3.png", "../im
  y++;
  if (y > 11) {y = 0};
 }
-
        //    INTENSITY   LEVEL      //
 z = 0;
 function swFright() {
@@ -32,11 +30,9 @@ function swFright() {
   image.src = lvl;
   z++;
   if (z > 2) {z = 0};
-
 }
-
       //     CHANGE   NAME       //
-function newname () {
+function newname() {
   var firstnames = ["Hairy ", "Alarming ", "Sweet ", "Sour ", "Floating ", "Big ", "Cool ", "Intimidating ", "Small ", "Grim ", "Horrid ", "Pretty ", "Mean ", "Nice ", "Ghastly ", "Good ", "Evil ", "Sharp ", "Quick ", "One ", "Ten ", "Long ", "Short ", "Flaming ", "Frigid "];
   var middlenames = ["Toe", "Finger", "Tooth", "Tail", "Horn", "Foot", "Hand", "Eye", "Candy", "Scar", "Ear", "Nose", "Beak", "Form", "Mouth", "Claw", "Breath", "Voice", "Paw", "Mind", "Fin", "Shadow", "Coffee", "Tea", "Cheek"];
   var lastnames = [" Bear", " Lion", "  Zombie", "  Ghoul", "  Vampire", "  Revenant", "  Skeleton", "  Ghost", "  Wolf", "  Rabbit", "  Pirate", "  Dragon", "  Shark", "  Demon", "  Reaper", "  Alien", "  King", "  Queen", "  Jester", "  Knight", "  Princess", "  Gorrila", "  Monkey", "  Robot", " Insect"];
@@ -46,9 +42,8 @@ function newname () {
 newn = ni1.concat(ni2, ni3);
 document.getElementById("newn").innerText = newn
 }
-
     //    CHNAGE TITLE   //
-function newtitle () {
+function newtitle() {
   var firstnames = ["Eerie ", "Dark ", "Misty ", "Haunted ", "Frightful ", "Comfortable ", "Uncomfortable ", "Decripit ", "Ruined ", "Pristine ", "Filthy ", "Disharmonious ", "Candlelight ", "Bookless ", "Gardened ", "Statlier ", "Tucked ", "Livable ", "Unlivable ", "Invaded ", "Spacious ", "Peaceful ", "Unbroken ", "Undisturbed ", "Secluded "];
   var middlenames = ["Oceanfront", "Hillside", "Swamp", "Town", "Village", "City", "Forest", "Hideaway", "Mountainside", "Highland", "Neighborhood", "Woodland", "Vacation", "Uptown", "Rural", "Hilltop", "Mountaintop", "Farm", "Downstream", "Mobile", "Riverfront", "Beachfront", "Lakefront", "Treetop", "Waterside"];
   var lastnames = [" Tower", " Home", " Cottage", " Cabin", " Mansion", " Tent", " Treehouse", " Castle", " Bungalow", " Apartmant", " Yurt", " Igloo", " Palace", " Cave", " Chalet", " Villa", " Condominium", " Duplex", " Château", " McMansion", " Suite", " Dormitory", " Shack", " Barndominium", " Fort"];
@@ -58,7 +53,6 @@ function newtitle () {
 newt = ti1.concat(ti2, ti3);
 document.getElementById("newt").innerText = newt
 }
-
      //  STORE USER DATA   //
 function storeUser() {
 //   pwd, email, choicex, choicey, lvl, newn, newt, ...
@@ -86,4 +80,125 @@ function readUser() {
   newt = userData[5];
  // document.getElementById("userData").innerHTML = userData;
 }
+var ShopList = [];
+var c = 0;
+function addeggs() {
+  ShopList.pop();
+  ShopList.pop();
+  var item = 'Box, Eggs';
+  ShopList[ShopList.length] = item;
+  ShopList[ShopList.length] = "TOTAL$";
+  var c = ShopList.length;
+  c -= 1;
+  c *= .25;
+  ShopList[ShopList.length] = c;
+   var j = document.getElementById("ShopList");
+   j.innerHTML = ShopList.join(" ");
+}
+function addtreats() {
+  ShopList.pop();
+  ShopList.pop();
+  var item = 'FullSize';
+  ShopList[ShopList.length] = item;
+  ShopList[ShopList.length] = "TOTAL$";
+  var c = ShopList.length;
+  c -= 1;
+  c *= .25;
+  ShopList[ShopList.length] = c;
+   var j = document.getElementById("ShopList");
+   j.innerHTML = ShopList.join(" ");
+}
+function addtp() {
+  ShopList.pop();
+  ShopList.pop();
+  var item = 'ToiletPapar';
+  ShopList[ShopList.length] = item;
+  ShopList[ShopList.length] = "TOTAL$";
+  var c = ShopList.length;
+  c -= 1;
+  c *= .25;
+  ShopList[ShopList.length] = c;
+   var j = document.getElementById("ShopList");
+   j.innerHTML = ShopList.join(" ");
+}
+function addtomato() {
+  ShopList.pop();
+  ShopList.pop();
+  var item = 'Tomatoes';
+  ShopList[ShopList.length] = item;
+  ShopList[ShopList.length] = "TOTAL$";
+  var c = ShopList.length;
+  c -= 1;
+  c *= .25;
+  ShopList[ShopList.length] = c;
+   var j = document.getElementById("ShopList");
+   j.innerHTML = ShopList.join(" ");
+}
+function adddeco() {
+  ShopList.pop();
+  ShopList.pop();
+  var item = 'Decorations';
+  ShopList[ShopList.length] = item;
+  ShopList[ShopList.length] = "TOTAL$";
+  var c = ShopList.length;
+  c -= 1;
+  c *= .25;
+  ShopList[ShopList.length] = c;
+   var j = document.getElementById("ShopList");
+   j.innerHTML = ShopList.join(" ");
+}
+function addcandy() {
+  ShopList.pop();
+  ShopList.pop();
+  var item = 'Candies';
+  ShopList[ShopList.length] = item;
+  ShopList[ShopList.length] = "TOTAL$";
+  var c = ShopList.length;
+  c -= 1;
+  c *= .25;
+  ShopList[ShopList.length] = c;
+   var j = document.getElementById("ShopList");
+   j.innerHTML = ShopList.join(" ");
+}
+function addcream() {
+  ShopList.pop();
+  ShopList.pop();
+  var item = 'ShaveFoam';
+  ShopList[ShopList.length] = item;
+  ShopList[ShopList.length] = "TOTAL$";
+  var c = ShopList.length;
+  c -= 1;
+  c *= .25;
+  ShopList[ShopList.length] = c;
+   var j = document.getElementById("ShopList");
+   j.innerHTML = ShopList.join(" ");
+}
+function addpumpkin() {
+  ShopList.pop();
+  ShopList.pop();
+  var item = 'Pumpkins';
+  ShopList[ShopList.length] = item;
+  ShopList[ShopList.length] = "TOTAL$";
+  var c = ShopList.length;
+  c -= 1;
+  c *= .25;
+  ShopList[ShopList.length] = c;
+   var j = document.getElementById("ShopList");
+   j.innerHTML = ShopList.join(" ");
+}
 
+function trolly() {
+  var cp = ShopList.length;
+  console.log(cp);
+  var carts = ["../images/mt_cart.png", "../images/full_cart.png", "../images/mt_cart_sm.png", "../images/full_cart_sm.png"]; 
+    if (cp <= 0) {
+      var Cimage = document.getElementById("carted");
+      var pic = carts[0];
+      Cimage.src = pic;
+    }
+    else if (cp >= 1) {
+      var Cimage = document.getElementById("carted");
+      var pic = carts[1];
+      Cimage.src = pic;
+    }
+}

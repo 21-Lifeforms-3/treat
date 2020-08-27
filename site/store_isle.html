@@ -14,6 +14,7 @@
 <body ng-app="myApp" ng-controller="myCtrl">
     <script src="../js/jquery-2.1.4.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/MYscripts.js"></script>
  <!--   <script src="../js/script.js"></script> -->
 
   <header>
@@ -75,48 +76,46 @@
 
   <!--    STOCKED  SHELVES      -->
       <div id="shelf-left">
-         <a href="">
+         <a onclick="addpumpkin(); trolly();">
           <div id="store-pumpkin"><br></div>
         </a>
       </div>
       <div id="shelf-left">
-        <a href="">
+        <a onclick="addcream(); trolly();">
           <div id="store-cream"><br></div>
         </a>
       </div>
       <div id="shelf-left"></div>
       <div id="shelf-left"></div>
       <div id="shelf-left">
-        <a href="">
+        <a onclick="addcandy(); trolly();">
           <div id="store-candy"><br></div>
         </a>
       </div>
       <div id="shelf-left">
-        <a href="">
+        <a onclick="adddeco(); trolly();">
           <div id="store-deco"><br></div>
         </a>
       </div>
-
-
       <div id="shelf-left">
-        <a href="">
+        <a onclick="addtomato(); trolly();">
           <div id="store-tomato"><br></div>
         </a>
       </div>
       <div id="shelf-left")>
-        <a href="">
+        <a onclick="addtp(); trolly();">
           <div id="store-tp"><br></div>
         </a>
       </div>
       <div id="shelf-left"></div>
       <div id="shelf-left"></div>
       <div id="shelf-left">
-        <a href="">
+        <a onclick="addtreats(); trolly();">
           <div id="store-treats"><br></div>
         </a>
       </div>
       <div id="shelf-left">
-        <a href="">
+        <a onclick="addeggs(); trolly();">
           <div id="store-eggs"><br></div>
         </a>
       </div>
@@ -127,20 +126,17 @@
 <script>
 var app = angular.module("myApp", []);
 app.controller("myCtrl", function($scope) {
-  $scope.records = [
-    "Alfreds Futterkiste",
-    "Berglunds snabbköp",
-    "Centro comercial Moctezuma",
-    "Ernst Handel",
-  ]
+  $scope.records = ShopList;
 });
 </script>
+
       <div id="shelf-left" class="dropdown-buy">
-        <span id="mt-cart"><br></span> 
+        <span id="carted"><br></span> 
         <div class="dropdown-buy-content">
-          <a href="store_buy.html"><p>:::SHOPING:::</p><p>:::::::::LIST::::::::</p></a>
-          <p ng-repeat="x in records">{{x}}</p>
+          <a href="store_buy.html"><p>::SHOPPING:</p><p>:::::::::LIST::::::::</p></a> 
+          <p id="ShopList"></p>
         </div>
+
       </div>
 </div>
      
