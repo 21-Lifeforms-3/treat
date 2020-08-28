@@ -190,15 +190,8 @@ function addpumpkin() {
 function trolly() {
   var cp = ShopList.length;
   console.log(cp);
-  var carts = ["../images/mt_cart.png", "../images/full_cart.png", "../images/mt_cart_sm.png", "../images/full_cart_sm.png"]; 
-    if (cp <= 0) {
-      var Cimage = document.getElementById("carted");
-      var pic = carts[0];
-      Cimage.src = pic;
-    }
-    else if (cp >= 1) {
-      var Cimage = document.getElementById("carted");
-      var pic = carts[1];
-      Cimage.src = pic;
+    if (cp >= 1) {
+    document.getElementById("Cimage").style.background 
+    = "url('../images/full_cart.png') no-repeat"; 
     }
 }
