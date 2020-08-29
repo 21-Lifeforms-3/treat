@@ -16,10 +16,10 @@
 
 
 </head>
-<body>
+<body onload="getPurchase()">
     <script src="../js/jquery-2.1.4.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-
+    <script src="../js/MYscripts.js"></script>
   <header>
 
 <!--  <iframe src="../audio/haunting_chilling.mp3" allow="autoplay" id="audio" style="display: none"></iframe>   -->
@@ -70,25 +70,14 @@
   <div class="jumbotron" id="buyStyle"></div>
 
 
-
-
-
-
-  <div id="Cimage">
-      <p id="ShopList">"list"</p>
-  </div>
-
-
-
-
-
+  
   
  <!--   PAYPAL     -->
   <script
     src="https://www.paypal.com/sdk/js?client-id=Ad_dG3DwvLxRc1YSX1rLQ-EWc74GYXmghV0njp8bPOIcvsR7VrJ3FF2uoK6nwM2jf2iNbiLSukfH6FdN"> // Required. Replace SB_CLIENT_ID with your sandbox client ID.
   </script>
 
-  <div id="paypal-button-container" class="col-lg-6"></div>
+  <div id="paypal-button-container" class="col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
 
 
   <script>
@@ -114,8 +103,11 @@
   //This function displays Smart Payment Buttons on your web page.
 </script>
 
-  
-  
+ 
+
+  <div id="belt-items" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <p id="belt">"belt items"</p>
+  </div>
 
 
  </div><!--    END OF MAIN CONTENT   -->

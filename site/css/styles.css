@@ -500,7 +500,6 @@ body {
 	overflow: hidden;
 	font-size: .8em; 
 }
-
 .dropdown-buy {
   position: relative;
   display: inline-block;
@@ -522,6 +521,10 @@ body {
   display: block;
   overflow-y: scroll;
   max-height: 100px;
+}
+.belt-items {
+	position: absolute;
+	width: 100%
 }
 /*   large devices only   */
 @media (min-width: 1200px) {

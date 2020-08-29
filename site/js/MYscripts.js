@@ -189,9 +189,26 @@ function addpumpkin() {
 
 function trolly() {
   var cp = ShopList.length;
-  console.log(cp);
     if (cp >= 1) {
     document.getElementById("Cimage").style.background 
-    = "url('../images/full_cart.png') no-repeat"; 
+    = "url('../images/full_cart.png') no-repeat";
+
+    document.getElementById("Cimage").style.background 
+    = "url('../images/full_cart.png') no-repeat";
     }
+}
+function sendPurchase() {
+    var cp = ShopList.length;
+    if (cp >= 1) {
+      localStorage['key'] = ShopList;
+      var p = (cp *= .25);
+      localStorage["price"] = p;
+    }
+    else if (cp == 0) {return false}
+}
+function getPurchase () {
+    var costs = localStorage["price"];
+    var belts = localStorage["key"];
+    document.getElementById('belt').innerText = belts;
+    document.getElementById('cost').innerText = costs;
 }
