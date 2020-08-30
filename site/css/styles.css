@@ -320,8 +320,8 @@ body {
 }
 #store-eggs {
 	background: url('../images/store_eggs.png') no-repeat;
-	margin-top: 8px;
-	margin-left: 5px;
+	margin-top: 15px;
+	margin-left: 17px;
 	width: 50%;
 	height: 40%;
 }
@@ -337,7 +337,7 @@ body {
 }
 #store-tomato {
 	background: url('../images/store_tomato.png') no-repeat;
-	margin-top: 37px;
+	margin-top: 47px;
 	width: 50%;
 	height: 40%;
 }
@@ -353,7 +353,8 @@ body {
 }
 #store-tp {
 	background: url('../images/store_tp.png') no-repeat;
-	margin-top: 20px;
+	margin-top: 27px;
+	margin-left: 5px;
 	width: 50%;
 	height: 40%;
 }
@@ -369,8 +370,8 @@ body {
 }
 #store-pumpkin {
 	background: url('../images/store_pumpkin.png') no-repeat;
-	margin-left: 25px;
 	margin-top: -10px;
+	margin-left: 30px;
 	width: 50%;
 	height: 50%;
 }
@@ -387,7 +388,6 @@ body {
 #store-cream {
 	background: url('../images/store_cream.png') no-repeat;
 	margin-left: 60px;
-	margin-top: -3px;
 	width: 50%;
 	height: 40%;
 }
@@ -403,7 +403,7 @@ body {
 }
 #store-candy {
 	background: url('../images/store_candy.png') no-repeat;
-	margin-top: 17px;
+	margin-top: 27px;
 	width: 50%;
 	height: 40%;
 }
@@ -421,7 +421,7 @@ body {
 	background: url('../images/store_treats.png') no-repeat;
 	width: 50%;
 	height: 50%;
-	margin-top: 4px;
+	margin-top: 14px;
 	margin-left: 60px;
 }
 #store-treats:hover {
@@ -436,7 +436,7 @@ body {
 }
 #store-deco {
 	background: url('../images/store_deco.png') no-repeat;
-	margin-top: 25px;
+	margin-top: 35px;
 	margin-left: 55px;
 	width: 50%;
 	height: 50%;
@@ -558,10 +558,6 @@ body {
 		margin-top: -43px;
 		margin-left: 475px;
 	}
-	#store-pumpkin {
-		margin-top: -10px;
-		margin-left: 48px;
-	}
 }
 /*   medium devices only   */
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -601,6 +597,10 @@ body {
 	#store-cream {
 		margin-top: 3px;
 	}
+	#store-pumpkin {
+		margin-top: -10px;
+		margin-left: 20px;
+}
 }
 /*   small devices only   */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -648,19 +648,30 @@ body {
 		margin-left: 295px;
 	}
 	#store-cream {
-		margin-top: 12px;
+		margin-top: 16px;
 	}
 	#store-candy {
-		margin-top: 5px;
+		margin-top: 20px;
 		margin-left: 12px;
 	}
 	#store-treats {
-		margin-top: 6px;
+		margin-top: 18px;
 		margin-left: 50px
 	}
 	#store-deco {
-		margin-top: 21px;
+		margin-top: 34px;
 		margin-left: 45px;
+	}
+	#store-eggs {
+		margin-top: 20px;
+		margin-left: 40px;
+	}
+	#store-pumpkin {
+		margin-top: 0;
+	}
+	#store-tp {
+		margin-top: 30px;
+		margin-left: 1px;
 	}
     #Eimage {
 		margin-left: 25%;
@@ -738,10 +749,8 @@ body {
 	height: 75px;
 	}
 	#store-pumpkin {
-		:hover; {
-			background: 
-		}
 		margin-top: 7px;
+		margin-left: 25px;
 	}
 	#store-tomato {
 		margin-left: 15px;

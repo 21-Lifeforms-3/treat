@@ -9,7 +9,7 @@ var closet = ["../images/char_group/alien.png", "../images/char_group/witch.png"
  image.src = choicex;
  x++;
  if (x > 17) {x = 0};
-}
+};
      //     CHANGE HOUSE    //
 y = 0;
 function switchhome() {
@@ -20,7 +20,7 @@ var closet = ["../images/home_group/2.png", "../images/home_group/3.png", "../im
  image.src = choicey;
  y++;
  if (y > 11) {y = 0};
-}
+};
        //    INTENSITY   LEVEL      //
 z = 0;
 function swFright() {
@@ -30,7 +30,7 @@ function swFright() {
   image.src = lvl;
   z++;
   if (z > 2) {z = 0};
-}
+};
       //     CHANGE   NAME       //
 function newname() {
   var firstnames = ["Hairy ", "Alarming ", "Sweet ", "Sour ", "Floating ", "Big ", "Cool ", "Intimidating ", "Small ", "Grim ", "Horrid ", "Pretty ", "Mean ", "Nice ", "Ghastly ", "Good ", "Evil ", "Sharp ", "Quick ", "One ", "Ten ", "Long ", "Short ", "Flaming ", "Frigid "];
@@ -41,7 +41,7 @@ function newname() {
  var ni3 = lastnames[Math.floor(Math.random() * lastnames.length)];
 newn = ni1.concat(ni2, ni3);
 document.getElementById("newn").innerText = newn
-}
+};
     //    CHNAGE TITLE   //
 function newtitle() {
   var firstnames = ["Eerie ", "Dark ", "Misty ", "Haunted ", "Frightful ", "Comfortable ", "Uncomfortable ", "Decripit ", "Ruined ", "Pristine ", "Filthy ", "Disharmonious ", "Candlelight ", "Bookless ", "Gardened ", "Statlier ", "Tucked ", "Livable ", "Unlivable ", "Invaded ", "Spacious ", "Peaceful ", "Unbroken ", "Undisturbed ", "Secluded "];
@@ -52,7 +52,7 @@ function newtitle() {
   var ti3 = lastnames[Math.floor(Math.random() * lastnames.length)];
 newt = ti1.concat(ti2, ti3);
 document.getElementById("newt").innerText = newt
-}
+};
      //  STORE USER DATA   //
 function storeUser() {
 //   pwd, email, choicex, choicey, lvl, newn, newt, ...
@@ -66,7 +66,7 @@ function storeUser() {
   Pname = getElementById(pwd).innerText = pwd;
   myJSON = JSON.stringify(userData);
   localStorage.setItem("Pname", myJSON);
-}
+};
 function readUser() {
   Pname = getElementById(pwd).innerText = pwd;
   text = localStorage.getItem("Pname");
@@ -79,136 +79,25 @@ function readUser() {
   newn = userData[4];
   newt = userData[5];
  // document.getElementById("userData").innerHTML = userData;
-}
+};
 var ShopList = [];
 var c = 0;
-function addeggs() {
-  ShopList.pop();
-  ShopList.pop();
-  var item = 'Box, Eggs';
+function addtolist (item) {
+  ShopList.pop(); ShopList.pop();
   ShopList[ShopList.length] = item;
   ShopList[ShopList.length] = "TOTAL$";
   var c = ShopList.length;
-  c -= 1;
-  c *= .25;
+  c -= 1; c *= .25;
   ShopList[ShopList.length] = c;
    var j = document.getElementById("ShopList");
    j.innerHTML = ShopList.join(" ");
-}
-function addtreats() {
-  ShopList.pop();
-  ShopList.pop();
-  var item = 'FullSize';
-  ShopList[ShopList.length] = item;
-  ShopList[ShopList.length] = "TOTAL$";
-  var c = ShopList.length;
-  c -= 1;
-  c *= .25;
-  ShopList[ShopList.length] = c;
-   var j = document.getElementById("ShopList");
-   j.innerHTML = ShopList.join(" ");
-}
-function addtp() {
-  ShopList.pop();
-  ShopList.pop();
-  var item = 'ToiletPapar';
-  ShopList[ShopList.length] = item;
-  ShopList[ShopList.length] = "TOTAL$";
-  var c = ShopList.length;
-  c -= 1;
-  c *= .25;
-  ShopList[ShopList.length] = c;
-   var j = document.getElementById("ShopList");
-   j.innerHTML = ShopList.join(" ");
-}
-function addtomato() {
-  ShopList.pop();
-  ShopList.pop();
-  var item = 'Tomatoes';
-  ShopList[ShopList.length] = item;
-  ShopList[ShopList.length] = "TOTAL$";
-  var c = ShopList.length;
-  c -= 1;
-  c *= .25;
-  ShopList[ShopList.length] = c;
-   var j = document.getElementById("ShopList");
-   j.innerHTML = ShopList.join(" ");
-}
-function adddeco() {
-  ShopList.pop();
-  ShopList.pop();
-  var item = 'Decorations';
-  ShopList[ShopList.length] = item;
-  ShopList[ShopList.length] = "TOTAL$";
-  var c = ShopList.length;
-  c -= 1;
-  c *= .25;
-  ShopList[ShopList.length] = c;
-   var j = document.getElementById("ShopList");
-   j.innerHTML = ShopList.join(" ");
-}
-function addcandy() {
-  ShopList.pop();
-  ShopList.pop();
-  var item = 'Candies';
-  ShopList[ShopList.length] = item;
-  ShopList[ShopList.length] = "TOTAL$";
-  var c = ShopList.length;
-  c -= 1;
-  c *= .25;
-  ShopList[ShopList.length] = c;
-   var j = document.getElementById("ShopList");
-   j.innerHTML = ShopList.join(" ");
-}
-function addcream() {
-  ShopList.pop();
-  ShopList.pop();
-  var item = 'ShaveFoam';
-  ShopList[ShopList.length] = item;
-  ShopList[ShopList.length] = "TOTAL$";
-  var c = ShopList.length;
-  c -= 1;
-  c *= .25;
-  ShopList[ShopList.length] = c;
-   var j = document.getElementById("ShopList");
-   j.innerHTML = ShopList.join(" ");
-}
-function addpumpkin() {
-  ShopList.pop();
-  ShopList.pop();
-  var item = 'Pumpkins';
-  ShopList[ShopList.length] = item;
-  ShopList[ShopList.length] = "TOTAL$";
-  var c = ShopList.length;
-  c -= 1;
-  c *= .25;
-  ShopList[ShopList.length] = c;
-   var j = document.getElementById("ShopList");
-   j.innerHTML = ShopList.join(" ");
-}
-
+};
 function trolly() {
   var cp = ShopList.length;
     if (cp >= 1) {
     document.getElementById("Cimage").style.background 
     = "url('../images/full_cart.png') no-repeat";
-
     document.getElementById("Cimage").style.background 
     = "url('../images/full_cart.png') no-repeat";
     }
-}
-function sendPurchase() {
-    var cp = ShopList.length;
-    if (cp >= 1) {
-      localStorage['key'] = ShopList;
-      var p = (cp *= .25);
-      localStorage["price"] = p;
-    }
-    else if (cp == 0) {return false}
-}
-function getPurchase () {
-    var costs = localStorage["price"];
-    var belts = localStorage["key"];
-    document.getElementById('belt').innerText = belts;
-    document.getElementById('cost').innerText = costs;
-}
+};
