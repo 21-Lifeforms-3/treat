@@ -87,18 +87,15 @@
           
           <button class="Nbutton" onclick="newname()">Player Name:<div id="newn" class="nameInput"></div></button>
           
-          <button class="Tbutton" onclick="newtitle()">House title:<div id="newt" class="nameInput"></div></button><br><br class="visible-lg visible-xs visible-sm">
-          
-
-          <form action="/action_page.php">
-            <br><br><br>        
+          <button class="Tbutton" onclick="newtitle()">House title:<div id="newt" class="nameInput"></div></button><br><br class="visible-lg visible-xs visible-sm">       
+          <form id="joining" action="/action_page.php" method="get">
+            <br><br><br>
             <label style="background-color: rgba(0, 0, 0, 0.5)" style="color: #bf0a0a" for="email">E-mail:</label>;
-            <input style="background-color: rgba(0, 0, 0, 0.5)" type="email" id="email" name="email"><br>
+            <input style="background-color: rgba(0, 0, 0, 0.5)" type="email" id="email" name="email" required><br>
             <label style="background-color: rgba(0, 0, 0, 0.5)"style="color: #bf0a0a" for="pwd">Password:</label>;
-            <input style="background-color: rgba(0, 0, 0, 0.5)" style="color: #000000" type="password" id="pwd" name="pwd">;
+            <input style="background-color: rgba(0, 0, 0, 0.5)" style="color: #000000" type="text" id="pwd" name="pwd" required>;
             <img src="../images/intensity-low.png" alt="Next Level" id="intensity" onclick="swFright()"><br>
-
-          <button class="Jbutton" onclick="storeUser()">JOIN<div id="newt"></div></button><br> 
+          <button class="Jbutton" onclick="storeUser()">JOIN<div></div></button><br> 
           </form>
         </div>
       </div>
