@@ -141,6 +141,35 @@ body {
 	color: #4c592e;
 	font-size: .8em;
 }
+/**   opening page  **/
+#opening-pg-img {
+	position: relative;
+	background-size: 100% 100%;
+	min-height: 600px;
+	background: url('../images/opening_pg_img.png') no-repeat;
+	background-position: top center;
+	margin-top: 30px;
+	border: 3px solid red;
+	div:nth-child(1) {position: absolute;}
+}
+#enter-button {
+	position: absolute;
+	background: url('../images/anim_gifs/enter2.gif') no-repeat;
+	height: 50px;
+	width: 145px;
+	border: 0;
+	margin-left: 10%;
+	margin-top: 27%;
+}
+#welcome {
+	position: absolute;
+	background: url('../images/anim_gifs/welcome.gif') no-repeat;
+	height: 250px;
+	width: 250px;
+	border: 0;
+	margin-left: 75%;
+	margin-top: 27%;
+}
 /**  HOME PAGE  **/
 .container .jumbotron {		
 		box-shadow: 0 0 40px #000000;
@@ -219,7 +248,7 @@ body {
 	}
 }
 #house-lot {
-	background: url("../images/home_group/home_lot_pics/2.png") no-repeat;
+	background: url("../images/home_group/2-lot.png") no-repeat;
 	position: relative;
 	width: 15%;
 	height: 100px;
@@ -240,13 +269,99 @@ body {
 	margin-top: 30px;
 	margin-left: -20px;
 }
+#lot-sign-lg {
+	position: absolute; bottom: 0;
+	background: url("../images/home_sign_lg.png") no-repeat;
+	width: 300px;
+	height: 150px;
+}
+#lot-sign-lg p {
+	margin-left: 75px;
+	color: #000;
+}
 #lot-title {	
 	margin-left: 40px;
 	line-height: 10%;
 	font-size: .9em;
 	color: #000;
 }
-/**   end home page    **/
+/**    START HOUSE PAGE    **/
+#house-pg-img {
+	position: relative;
+	background-size: 100% 100%;
+	min-height: 600px;
+	/*min-width: 100%;*/
+	background: url('../images/home_group/2-home.png') no-repeat;
+	background-position: top center;
+	margin-top: -20px;
+	border: 1px solid black;
+	div:nth-child(1) {position: absolute;}
+}
+#cupboard {
+	float: left;
+	position: relative;
+	min-height: 200px;
+	width: 210PX;
+	background: url('../images/cupboard_shut.png') no-repeat;
+	margin-top: 20px;
+	margin-left: 30px;
+}
+#cupboard p {
+	margin-left: 55px;
+	color: #000;
+}
+#cupboard:hover {
+	background: url('../images/cupboard_open.png') no-repeat;
+	margin-top: 20px;
+	margin-left: 1px;
+}
+#backpack {
+	position: relative;
+	min-height: 125px;
+	width: 125PX;
+	background: url('../images/pack_shut.png') no-repeat;
+	margin-top: -130px;
+	margin-left: 195px;
+}
+#backpack:hover {
+	background: url('../images/pack_open.png') no-repeat;
+	margin-top: -130px;
+	margin-left: 185px;
+}
+#bowl {
+	position: relative;
+	min-height: 60px;
+	width: 100PX;
+	background: url('../images/bowl_full.png') no-repeat;
+	margin-top: 20px;
+	margin-left: 900px;
+}
+#bowl:hover {
+	background: url('../images/bowl_nill.png') no-repeat;
+	margin-top: 20px;
+	margin-left: 900px;
+}
+#pail {
+	position: relative;
+	min-height: 150px;
+	width: 150PX;
+	background: url('../images/pail.png') no-repeat;
+	margin-top: 15px;
+	margin-left: 220px;
+}
+#pail p {
+	margin-left: 65px;
+	color: #000;
+}
+#pail:hover {
+	position: relative;
+	min-height: 150px;
+	width: 150PX;
+	background: url('../images/pail-hover.png') no-repeat;
+	margin-top: 15px;
+	margin-left: 220px;
+}
+/**    END HOUSE PAGE    **/
 #help-img {
 	background: url('../images/help_icon.png') no-repeat;
 	width: 40px;
@@ -551,12 +666,12 @@ body {
 		box-shadow: 0 1px 4px 2px #000000;
 	}
 	#store-doors {
-		margin-left: 530px;
-		margin-top: 352px;
+		margin-left: 545px;
+		margin-top: 357px;
 	}
 	.pop-zombie-blue {
-		margin-top: -43px;
-		margin-left: 475px;
+		margin-top: -38px;
+		margin-left: 485px;
 	}
 }
 /*   medium devices only   */
@@ -566,6 +681,18 @@ body {
 		height: 330px;
 		margin-top: 15px;
 	}
+	#opening-pg-img {
+	background: url('../images/opening_pg_med.png') no-repeat;
+	min-height: 350px;
+	}
+	#enter-button {
+	background: url('../images/anim_gifs/enter2.gif') no-repeat;
+	margin-left: 8%;
+	margin-top: 17%;
+}
+	#welcome {
+	margin-top: 18%;
+}
 	.nameInput {
 	font-size: .9em;
 	}
@@ -587,11 +714,11 @@ body {
 		box-shadow: 0 1px 4px 2px #000000;
 	}
 	#store-doors {
-		margin-left: 438px;
-		margin-top: 353px;
+		margin-left: 445px;
+		margin-top: 356px;
 	}
 	.pop-zombie-blue {
-		margin-top: -44px;
+		margin-top: -40px;
 		margin-left: 400px;
 	}
 	#store-cream {
@@ -609,6 +736,19 @@ body {
 		height: 200px;
 		margin-top: 15px;
 	}
+	#opening-pg-img {
+	background: url('../images/opening_pg_sm.png') no-repeat;
+	min-height: 200px;
+	}
+	#enter-button {
+	position: absolute;
+	background: url('../images/anim_gifs/enter2.gif') no-repeat;
+	margin-left: 6%;
+	margin-top: 12%;
+}
+	#welcome {
+	margin-top: 12%;
+}
 	.navbar-brand {
 	padding-top: 0px;
     }
@@ -640,12 +780,12 @@ body {
 		box-shadow: 0 1px 4px 2px #000000;
 	}
 	#store-doors {
-		margin-left: 321px;
-		margin-top: 351px;
+		margin-left: 335px;
+		margin-top: 363px;
 	}
 	.pop-zombie-blue {
-		margin-top: -42px;
-		margin-left: 295px;
+		margin-top: -38px;
+		margin-left: 290px;
 	}
 	#store-cream {
 		margin-top: 16px;
@@ -688,6 +828,27 @@ body {
 	    background: url('../images/1_xs.png');     
  		height: 150px;
  		margin-top: 15px;
+	}
+	#opening-pg-img {
+		background: url('../images/opening_pg_xs.png') no-repeat;
+		min-height: 200px;
+	}
+	#enter-button {
+		position: absolute;
+		background: url('../images/anim_gifs/enter2.gif') no-repeat;
+		margin-left: 0.75%;
+		margin-top: 17%;
+}
+	#welcome {
+		margin-top: 40px;
+		margin-left: 20px;
+}
+	#create-account {
+		background-color: #000;
+		font-size: .75em;
+		border: 0;
+		margin-top: 35px;
+		margin-left: 10px;
 	}	
 	#nav-list {
 	font-size: 1em;

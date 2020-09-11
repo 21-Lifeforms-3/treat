@@ -38,7 +38,7 @@ function swFright() {
 function newname() {
   var firstnames = ["Hairy ", "Alarming ", "Sweet ", "Sour ", "Floating ", "Big ", "Cool ", "Intimidating ", "Small ", "Grim ", "Horrid ", "Pretty ", "Mean ", "Nice ", "Ghastly ", "Good ", "Evil ", "Sharp ", "Quick ", "One ", "Ten ", "Long ", "Short ", "Flaming ", "Frigid "];
   var middlenames = ["Toe", "Finger", "Tooth", "Tail", "Horn", "Foot", "Hand", "Eye", "Candy", "Scar", "Ear", "Nose", "Beak", "Form", "Mouth", "Claw", "Breath", "Voice", "Paw", "Mind", "Fin", "Shadow", "Coffee", "Tea", "Cheek"];
-  var lastnames = [" Bear", " Lion", "  Zombie", "  Ghoul", "  Vampire", "  Revenant", "  Skeleton", "  Ghost", "  Wolf", "  Rabbit", "  Pirate", "  Dragon", "  Shark", "  Demon", "  Reaper", "  Alien", "  King", "  Queen", "  Jester", "  Knight", "  Princess", "  Gorrila", "  Monkey", "  Robot", " Insect"];
+  var lastnames = [" Bear", " Lion", " Zombie", " Ghoul", " Vampire", " Revenant", " Skeleton", " Ghost", " Wolf", " Rabbit", " Pirate", " Dragon", " Shark", " Demon", " Reaper", " Alien", " King", " Queen", " Jester", " Knight", " Princess", " Gorrila", " Monkey", " Robot", " Insect"];
  var ni1 = firstnames[Math.floor(Math.random() * firstnames.length)];
  var ni2 = middlenames[Math.floor(Math.random() * middlenames.length)];
  var ni3 = lastnames[Math.floor(Math.random() * lastnames.length)];
@@ -63,13 +63,16 @@ document.getElementById("newt").innerText = newt
     var GameData = [];
 function storeUser() {
 //   pwd, email, choicex, choicey, lvl, newn, newt, ...
-
+  var ckpwd = document.getElementById("joining").elements[1].value;
+  var ckemail = document.getElementById("joining").elements[0].value;
+  if ( ckpwd == "") {return;};
+  if ( ckemail == "") {return;};
   if (userData.choicex === undefined) {
     x = Math.floor(Math.random() * 16);
     switchImg();
   };
     if (userData.choicey === undefined) {
-    x = Math.floor(Math.random() * 10);
+    y = Math.floor(Math.random() * 10);
     switchhome();
   };
     if (userData.newn === undefined) {
@@ -80,28 +83,22 @@ function storeUser() {
   };
     userData.pwd = document.getElementById("joining").elements[1].value;
     userData.email = document.getElementById("joining").elements[0].value;
-
-
  GameData[GameData.length] = userData;
  myJSON = JSON.stringify(GameData);
  localStorage.setItem("GameData", myJSON);
+
+};
+
+
+function readUser() {
+  var file = JSON.parse(localStorage.getItem("GameData"));
   console.log(userData);
   console.log(GameData);
-   
+  console.log(file);
 };
-function readUser() {
-  Pname = getElementById(pwd).innerText = pwd;
-  text = localStorage.getItem("Pname");
-  myJSON = JSON.parse(text);
-  var userData = getElementById("myJSON").innerText = myJSON;
-  email = userData[0];
-  choicex = userData[1];
-  choicey = userData[2];
-  lvl = userData[3];
-  newn = userData[4];
-  newt = userData[5];
- // document.getElementById("userData").innerHTML = userData;
-};
+
+
+
 var ShopList = [];
 var c = 0;
 function addtolist (item) {
@@ -122,4 +119,17 @@ function trolly() {
     document.getElementById("Cimage").style.background 
     = "url('../images/full_cart.png') no-repeat";
     }
+};
+
+// this is bad needs reworking
+function emptypail () {
+  var mc = document.getElementById('savedCandy').innerHTML;
+    document.getElementById('savedCandy').innerHTML = mc + 10;
+    console.log(mc);
+    console.log(savedCandy);
+    console.log(pailcount);
+};
+function change_page (page) {
+  close();
+  window.open(page);
 };

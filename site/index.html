@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
 	<title>Hallowed Addiction</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/styles.css">
@@ -13,12 +11,8 @@
     <script src="../js/jquery-2.1.4.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/MYscripts.js"></script>
- <!--   <script src="../js/script.js"></script> -->
-
   <header>
-
 <!--  <iframe src="../audio/haunting_chilling.mp3" allow="autoplay" id="audio" style="display: none"></iframe>   -->
-  
   	<nav id="header-nav" class="navbar navbar-default">
   	  <div class="container">
   	  	<div class="navbar-header">
@@ -32,61 +26,42 @@
   	  		<a href="index.html"><h1>Hallowed Addiction</h1></a>
   	  		<p class="visible-lg visible-md">Online Trick-or-Treating</p>
         </div>
-      </div>
-      
-        <!--  navigation buttons   -->      
-        
-        <ul id="nav-list" class="nav navbar-nav navbar-right">      
-          
+      </div>     
+        <!--  navigation buttons   -->              
+        <ul id="nav-list" class="nav navbar-nav navbar-right">
           <li>
-            <a href="log_page.html">              
-              <div id="login-img" alt="Log in image" class="hidden-xs"></div> Enter</a>
-          </li>
+            <a href="hallowed_addiction.html">              
+              <div id="login-img" alt="Log in image" class="hidden-xs"></div> Back</a>
+          </li>     
           <li>
-            <a href="help_page.html">              
+            <a href="opening_help.html">              
               <div id="help-img" alt="Help image" class="hidden-xs"></div> Help</a>
           </li>
         </ul>
  <!--    end navagation buttons    -->
-     
-   <!--      end navagation buttons    -->
     </div> 
     </nav>
   </header>
-
-
-
   <div id="main-content" class="container">
     <div class="jumbotron">     
-
     </div>
-
  <!--     HOME TILES    -->
-
     <div id="home-tiles" class="row">
-
-
       <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
         <div id="costume-tile">
           <img src="../images/char_group/what_char.png" alt="Next Costume" id="imgToSwitch" onclick="switchImg()">
           <span>Costume</span>
         </div>
       </div>
-
-
       <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
         <div id="houses-tile">
           <img src="../images/home_group/pick_house.png" alt="Next Costume" id="homeToSwitch" onclick="switchhome()">
           <span>House</span>
         </div>
       </div>
-
-      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-        
-         <div id="join-tile" class="text-center">
-          
-          <button class="Nbutton" onclick="newname()">Player Name:<div id="newn" class="nameInput"></div></button>
-          
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">       
+         <div id="join-tile" class="text-center">         
+          <button class="Nbutton" onclick="newname()">Player Name:<div id="newn" class="nameInput"></div></button>        
           <button class="Tbutton" onclick="newtitle()">House title:<div id="newt" class="nameInput"></div></button><br><br class="visible-lg visible-xs visible-sm">       
           <form id="joining" action="/action_page.php" method="get">
             <br><br><br>
@@ -100,9 +75,7 @@
         </div>
       </div>
     </div><!--   END OF HOME TILES      --> 
-
  </div><!--    END OF MAIN CONTENT   -->
-
  <footer class="panel-footer">
    <div class="container">
     <div class="row">
@@ -126,9 +99,7 @@
         <p><a href=”https://www.zapsplat.com”>Sound effects and music obtained from zapsplat.com</a></p>       
       </section>
     </div>
-      <div id="copyright" class="text-center">&copy; Copyright 2020</div>     
-   </div>
+      <div id="copyright" class="text-center">&copy; Copyright 2020</div></div>
  </footer><!--   END FOOTER   -->
-
 </body>
 </html>

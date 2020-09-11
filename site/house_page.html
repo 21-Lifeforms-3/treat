@@ -8,12 +8,12 @@
 	<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Oxygen:wght@700&display=swap" rel="stylesheet">
 </head>
-<body>
-
+<body onload="readUser()">
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/MYscripts.js"></script>
   <header>
-
-<!--  <iframe src="../audio/haunting_chilling.mp3" allow="autoplay" id="audio" style="display: none"></iframe>   -->
-  
+<!--  <iframe src="../audio/haunting_chilling.mp3" allow="autoplay" id="audio" style="display: none"></iframe>   -->  
   	<nav id="header-nav" class="navbar navbar-default">
   	  <div class="container">
   	  	<div class="navbar-header">
@@ -32,11 +32,6 @@
         <!--  navigation buttons   -->      
         
         <ul id="nav-list" class="nav navbar-nav navbar-right">      
-          
-          <li>
-            <a href="log_page.html">              
-              <div id="login-img" alt="Log in image" class="hidden-xs"></div> Enter</a>
-          </li>
           <li>
             <a href="help_page.html">              
               <div id="help-img" alt="Help image" class="hidden-xs"></div> Help</a>
@@ -53,26 +48,42 @@
             <a href="town_page.html">
               <div id="neighbor-img" alt="Neighborhood image" class="hidden-xs"></div> Town</a>
           </li>
-          <li>
-            <a href="house_page.html">
-              <div id="home-img" alt="Home image" class="hidden-xs"></div> Home</a>
-          </li>
         </ul>
  <!--    end navagation buttons    -->
      
-   <!--      end navagation buttons    -->
     </div> 
     </nav>
   </header>
 
+  <!--    START OF MAIN CONTENT   -->
+  
 
+  <div id="house-pg-img" class="container" class="jumbotron" class="row">
 
-  <div id="main-content" class="container">
-    
+    <div id="cupboard"><br><br>
+       <p id="savedCandy"></p>
+    </div>
+   
+    <div id="pail" onclick="emptypail()"><br>
+       <p id="pailcount"></p>
+    </div>
 
-  </div><!--    END OF MAIN CONTENT   -->
+    <div>
+      <div id="lot-sign-lg"><br><br>
+        <p>Vanilla Thriller Villa</p>
+      </div>
+    </div>
 
- <footer class="panel-footer">
+<!-- <script>
+    document.getElementById('savedCandy').innerHTML = 10;
+    document.getElementById('pailcount').innerHTML = 60 + 9;
+</script>
+ -->
+
+  </div>
+  <!--    END OF MAIN CONTENT   -->
+
+ <footer class="panel-footer" style="margin-top: 0">
    <div class="container">
     <div class="row">
       <section id="hours" class="col-sm-4">
@@ -97,9 +108,5 @@
       <div id="copyright" class="text-center">&copy; Copyright 2020</div>     
    </div>
  </footer><!--   END FOOTER   -->
-
-  <script src="js/jquery-2.1.4.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
 </body>
 </html>
